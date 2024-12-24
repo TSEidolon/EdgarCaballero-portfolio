@@ -2,7 +2,9 @@
 
 const HeroSection = () => {
   return (
-    <div>hello from hero</div>
+    <div className="min-h-screen bg-[color:var(--primary-color)] py-10">
+      hello from hero
+    </div>
   )
 }
 
