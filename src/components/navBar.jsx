@@ -4,7 +4,7 @@ const NavBar = () => {
   const [navbarOpen, setNavbarOpen] =useState(false);
 
   return (
-    <section className="fixed top-0 left-0 right-0 z-50 flex w-screen justify-between items-center  px-[10rem] lg:px-[20rem] lg:flex-row flex-col ">
+    <section className="fixed top-0 left-0 right-0 z-50 flex w-screen justify-between items-center py-5 lg:py-0 px-[10rem] lg:px-[20rem] lg:flex-row flex-col min-h-[110px] lg:min-h-[40px] ">
       <div className="flex justify-between w-full min-w-[200px]">
         <div className="navBar-left flex justify-start w-[40%] text-2xl">
           Tseidolon
@@ -15,14 +15,14 @@ const NavBar = () => {
       </div>
    
       
-      <div className={"lg:flex  items-center h-full gap-10 lg:flex-row flex-col lg:pr-10   p-5 " + (navbarOpen ? " flex" : " hidden")}>
+      <div className={"lg:flex  items-center h-full gap-10 lg:flex-row flex-col lg:pr-10   p-5 text-lg" + (navbarOpen ? " flex" : " hidden")}>
         <button>
           Home
         </button>
         <button>
           Projects
         </button>
-        <button>
+        <button className="whitespace-nowrap">
           About Me
         </button>
       </div>
