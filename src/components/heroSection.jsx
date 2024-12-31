@@ -28,7 +28,7 @@ const HeroSection = () => {
               creaseAngle={0.4} // Smooth normals everywhere except faces that meet at an angle greater than the crease angle
               position={[0, 1.7, 0]}
             >
-              <meshPhongMaterial color="blue" wireframe />
+              <meshPhongMaterial color="green" wireframe />
             </RoundedBox>
 
           </mesh>
