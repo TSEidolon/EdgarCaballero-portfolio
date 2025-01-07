@@ -6,7 +6,7 @@ import CanvasLoader from './canvasLoader'
 
 import { CartoonDiorama } from './cartoonDiorama'
 import { ModelTest } from './modelTest'
-
+import HeroCamera from './heroCamera'
 
 
 const HeroSection = () => {
@@ -22,7 +22,10 @@ const HeroSection = () => {
         <Canvas >
           <Suspense fallback={<CanvasLoader/>}>
             <PerspectiveCamera  position={[0,0,30]} />
-            <CartoonDiorama scale={1} position={[0, -1.2, 0]} rotation={[0, Math.PI/ 2, 0] }/>
+            <HeroCamera>
+              <CartoonDiorama scale={1} position={[0, -1.2, 0]} rotation={[0, Math.PI/ 2, 0] }/>
+            </HeroCamera>
+
             {/* <ModelTest position={[0, -1, 0]}/> */}
             <ambientLight intensity={1}/>
             <directionalLight position={[10,10,10]} intensity={0.5}/>

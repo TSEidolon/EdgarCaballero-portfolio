@@ -1,7 +1,7 @@
 import NavBar from "./components/navBar.jsx"
 // import HeroSection from "./components/heroSection.jsx"
 import HeroSectionTest from "./components/heroSectionTest.jsx"
-
+import OverviewSection from "./components/overviewSection.jsx"
 function App() {
 
 
@@ -11,6 +11,7 @@ function App() {
  
       {/* <HeroSection/> */}
       <HeroSectionTest />
+      <OverviewSection/>
 
        
     </div>
