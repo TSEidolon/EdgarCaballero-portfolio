@@ -9,7 +9,7 @@ const HeroCamera = ({ isMobile, children }) => {
     easing.damp3(state.camera.position, [0, .6, 5], 0.25, delta);
 
     if (!isMobile) {
-      easing.dampE(group.current.rotation, [-state.pointer.y / 10, state.pointer.x / 10, 0], 0.25, delta);
+      easing.dampE(group.current.rotation, [-state.pointer.y / 12, state.pointer.x / 12, 0], 0.25, delta);
     }
   });
 

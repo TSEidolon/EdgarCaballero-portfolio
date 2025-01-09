@@ -1,11 +1,10 @@
 import {Canvas} from '@react-three/fiber'
-import { CameraControls, RoundedBox,PerspectiveCamera} from '@react-three/drei'
+import { PerspectiveCamera} from '@react-three/drei'
 import { Suspense } from 'react'
 
 import CanvasLoader from './canvasLoader'
 
 import { CartoonDiorama } from './cartoonDiorama'
-import { ModelTest } from './modelTest'
 import HeroCamera from './heroCamera'
 
 
@@ -25,11 +24,8 @@ const HeroSection = () => {
             <HeroCamera>
               <CartoonDiorama scale={1} position={[0, -1.2, 0]} rotation={[0, Math.PI/ 2, 0] }/>
             </HeroCamera>
-
-            {/* <ModelTest position={[0, -1, 0]}/> */}
             <ambientLight intensity={1}/>
             <directionalLight position={[10,10,10]} intensity={0.5}/>
-            {/* <CameraControls/> */}
           </Suspense>
         </Canvas>
       </section>
