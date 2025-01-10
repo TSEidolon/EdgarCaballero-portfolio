@@ -10,22 +10,25 @@ import HeroCamera from './heroCamera'
 
 const HeroSection = () => {
   return (
-    <section className='
-    bg-hero-background bg-cover bg-center bg-no-repeat min-h-screen bg-[color:var(--primary-color)] '>
-      <section className='top-hero 
-      bg-hero-background-test bg-cover bg-bottom bg-no-repeat 
-      z-20 h-screen w-full border-2 border-black'>
-        <div className="main-content">
-          hello from herotest
+    <section className='bg-hero-background bg-fixed
+    z-0 bg-cover bg-center bg-no-repeat min-h-screen bg-[color:var(--primary-color)] relative'>
+      <section className='top-hero z-10
+       bg-cover bg-bottom bg-no-repeat 
+       h-screen w-full border-2 border-black '>
+        <div className="main-content h-full w-full flex justify-center items-center text-xl">
+          hello from herotest Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, ipsum?
+        </div>
+        <div className=''>
+
         </div>
 
       </section>
-      <section className=' z-10 bottom-hero w-full h-full inset-0 absolute'>
-        <Canvas >
+      <section className=' z-0 bottom-hero w-full h-full inset-0 absolute'>
+        <Canvas className='' >
           <Suspense fallback={<CanvasLoader/>}>
             <PerspectiveCamera  position={[0,0,30]} />
             <HeroCamera>
-              <CartoonDiorama scale={1} position={[0, -1, 0]} rotation={[0, Math.PI/ 2, 0] }/>
+              <CartoonDiorama scale={.8} position={[0, -1, 0]} rotation={[0, Math.PI/ 2, 0] }/>
             </HeroCamera>
             <ambientLight intensity={1}/>
             <directionalLight position={[10,10,10]} intensity={0.5}/>
