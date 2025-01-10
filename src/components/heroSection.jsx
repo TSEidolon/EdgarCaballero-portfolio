@@ -1,26 +1,38 @@
 import {Canvas} from '@react-three/fiber'
 import { PerspectiveCamera} from '@react-three/drei'
 import { Suspense } from 'react'
-
+import { Parallax } from 'react-scroll-parallax';
 import CanvasLoader from './canvasLoader'
 
 import { CartoonDiorama } from './cartoonDiorama'
 import HeroCamera from './heroCamera'
-
+import leavesFallingOne from "../assets/leavesFallingOne.png"
+import leavesFallingTwo from "../assets/leavesFallingTwo.png"
 
 const HeroSection = () => {
   return (
     <section className='bg-hero-background bg-fixed
     z-0 bg-cover bg-center bg-no-repeat min-h-screen bg-[color:var(--primary-color)] relative'>
-      <section className='top-hero z-10
+      <section className='top-hero z-10 bg-hero-background-test
        bg-cover bg-bottom bg-no-repeat 
        h-screen w-full border-2 border-black '>
-        <div className="main-content h-full w-full flex justify-center items-center text-xl">
-          hello from herotest Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, ipsum?
+        <div className="main-content h-[400px]  flex flex-col justify-center items-center gap-2 text-4xl">
+          <p>CatchPhrase Here!</p>
+          <p>Secondary Catchphrase Here!</p>
         </div>
-        <div className=''>
+        <Parallax  speed={10} className='leaves-1 -z-10 absolute top-[40%] right-[10%]'>
+          <img src={leavesFallingOne} alt="" className='h-[300px] w-[500]' />
+        </Parallax>
+        <Parallax  speed={5} className='leaves-1 -z-10 absolute top-[60%] right-[60%]'>
+          <img src={leavesFallingOne} alt="" className='h-[300px] w-[500]' />
+        </Parallax>
+        <Parallax speed={10} className='leaves-2 -z-10 absolute top-[40%] right-[60%]'>
+          <img src={leavesFallingTwo} alt="" className='h-[300px] w-[500]' />
+        </Parallax>
+        <Parallax speed={5} className='leaves-2 -z-10 absolute top-[50%] right-[10%]'>
+          <img src={leavesFallingTwo} alt="" className='h-[300px] w-[500]' />
+        </Parallax>
 
-        </div>
 
       </section>
       <section className=' z-0 bottom-hero w-full h-full inset-0 absolute'>
