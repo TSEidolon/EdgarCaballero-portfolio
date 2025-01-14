@@ -8,6 +8,7 @@ import { CartoonDiorama } from './cartoonDiorama'
 import HeroCamera from './heroCamera'
 import leavesFallingOne from "../assets/leavesFallingOne.png"
 import leavesFallingTwo from "../assets/leavesFallingTwo.png"
+import leavesFalling from "../assets/leavesFalling.png"
 
 const HeroSection = () => {
   return (
@@ -31,6 +32,9 @@ const HeroSection = () => {
         </Parallax>
         <Parallax speed={5} className='leaves-2 -z-10 absolute top-[50%] right-[10%]'>
           <img src={leavesFallingTwo} alt="" className='h-[300px] w-[500]' />
+        </Parallax>
+        <Parallax speed={15} className='leaves-2 -z-10 absolute top-[40%] right-[35%]'>
+          <img src={leavesFalling} alt="" className='h-[400px] w-[500]' />
         </Parallax>
 
 
