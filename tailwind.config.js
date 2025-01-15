@@ -10,6 +10,7 @@ export default {
         'hero-background':"url('src/assets/backgroundBricks.png')",
         'hero-background-two':"url('src/assets/leavesBanner.png')",
         'hero-background-test':"url('src/assets/leavesBannerOne.png')",
+        'overview-background':"url('src/assets/leavesShadow.png')",
 
       }
     },

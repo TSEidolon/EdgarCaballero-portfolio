@@ -16,7 +16,7 @@ const HeroSection = () => {
     z-0 bg-cover bg-center bg-no-repeat min-h-screen bg-[color:var(--primary-color)] relative'>
       <section className='top-hero z-10 bg-hero-background-test
        bg-cover bg-bottom bg-no-repeat 
-       h-screen w-full border-2 border-black '>
+       h-screen w-full  '>
         <div className="main-content h-[400px]  flex flex-col justify-center items-center gap-2 text-4xl">
           <p>CatchPhrase Here!</p>
           <p>Secondary Catchphrase Here!</p>

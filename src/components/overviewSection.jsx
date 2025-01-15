@@ -5,12 +5,12 @@ import { Parallax } from 'react-scroll-parallax';
 import CanvasLoader from './canvasLoader'
 
 import { BirdsOverview } from './birdsOverview';
-import leavesShadow from '../assets/leavesShadow.png'
+
 
 
 const OverviewSection = () => {
   return (
-    <div className='h-screen bg-blue-300 border-2 border-blue-500 relative'>
+    <div className='bg-overview-background bg-right-top bg-no-repeat bg-contain  h-screen bg-[color:var(--primary-color)] relative'>
       <section className='z-10 h-screen w-[60%] flex py-12 items-stretch flex-col pl-[15rem]'>
         <div className='introduction h-[50%] pt-12 px-10'>
           <p className='text-2xl  pb-10'>Introduction / Overview</p>
@@ -18,6 +18,7 @@ const OverviewSection = () => {
         </div>
         <div className='tech-stack h-[40%] w-[300px] px-10 text-2xl'>
           <p>Tech Stack: </p>
+
           <div className='grid-cols-3 grid-rows-2 grid gap-2 pt-4'>
             <div className='h-[50px] w-[50px] border-2 border-black flex justify-center items-center'>
             JS
