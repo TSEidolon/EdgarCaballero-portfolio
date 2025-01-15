@@ -11,14 +11,23 @@ import leavesShadow from '../assets/leavesShadow.png'
 const OverviewSection = () => {
   return (
     <div className='h-screen bg-blue-300 border-2 border-blue-500 relative'>
-      <section className='z-10 h-screen w-[70%]'>
-        <div className='introduction'>
-          <p>Introduction / Overview</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum tenetur ex! Nam, ipsum ipsa iure beatae eaque magni maiores non sapiente earum distinctio eum a aliquam quisquam hic repellat! Nobis, beatae! Dolorem dolorum ex modi quibusdam incidunt repellendus dicta!</p>
+      <section className='z-10 h-screen w-[60%] flex py-12 items-stretch flex-col pl-[15rem]'>
+        <div className='introduction h-[50%] pt-12 px-10'>
+          <p className='text-2xl  pb-10'>Introduction / Overview</p>
+          <p className='text-start text-lg '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum tenetur ex! Nam, ipsum ipsa iure beatae eaque magni maiores non sapiente earum distinctio eum a aliquam quisquam hic repellat! Nobis, beatae! Dolorem dolorum ex modi quibusdam incidunt repellendus dicta!</p>
         </div>
-        <div className='tech-stack'>
+        <div className='tech-stack h-[40%] w-[300px] px-10 text-2xl'>
           <p>Tech Stack: </p>
-          <div>
+          <div className='grid-cols-3 grid-rows-2 grid gap-2 pt-4'>
+            <div className='h-[50px] w-[50px] border-2 border-black flex justify-center items-center'>
+            JS
+            </div>
+            <div className='h-[50px] w-[50px] border-2 border-black flex justify-center items-center'>
+            JS
+            </div>
+            <div className='h-[50px] w-[50px] border-2 border-black flex justify-center items-center'>
+            JS
+            </div>
             <div className='h-[50px] w-[50px] border-2 border-black flex justify-center items-center'>
             JS
             </div>
