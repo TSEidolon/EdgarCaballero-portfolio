@@ -3,9 +3,8 @@ import { PerspectiveCamera} from '@react-three/drei'
 import { Suspense } from 'react'
 import { Parallax } from 'react-scroll-parallax';
 import CanvasLoader from './canvasLoader'
-
 import { BirdsOverview } from './birdsOverview';
-
+import TechStack from './techStack';
 
 
 const OverviewSection = () => {
@@ -16,10 +15,10 @@ const OverviewSection = () => {
           <p className='text-2xl  pb-10'>Introduction / Overview</p>
           <p className='text-start text-lg '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum tenetur ex! Nam, ipsum ipsa iure beatae eaque magni maiores non sapiente earum distinctio eum a aliquam quisquam hic repellat! Nobis, beatae! Dolorem dolorum ex modi quibusdam incidunt repellendus dicta!</p>
         </div>
-        <div className='tech-stack h-[40%] w-[300px] px-10 text-2xl'>
-          <p>Tech Stack: </p>
+        <div className='tech-stack-list h-[40%] w-[500px] px-10 '>
+          <p className='text-2xl '>Tech Stack: </p>
 
-          <div className='grid-cols-3 grid-rows-2 grid gap-2 pt-4'>
+          {/* <div className='grid-cols-3 grid-rows-2 grid gap-2 pt-4'>
             <div className='h-[50px] w-[50px] border-2 border-black flex justify-center items-center'>
             JS
             </div>
@@ -32,7 +31,9 @@ const OverviewSection = () => {
             <div className='h-[50px] w-[50px] border-2 border-black flex justify-center items-center'>
             JS
             </div>
-          </div>
+            
+          </div> */}
+          <TechStack/>
         </div>
       </section>
 
