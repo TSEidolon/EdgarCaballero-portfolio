@@ -1,14 +1,29 @@
 import React from 'react'
-import { FaReact } from "react-icons/fa";
-
+import { FaReact, FaCss3Alt, FaHtml5 } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiThreedotjs } from "react-icons/si";
 
 const techList = [
 {
-  stack: 'JavaScript', icon: <FaReact className='h-full w-full'/>, id: '0',
+  stack: 'Javascript', icon: <IoLogoJavascript className='h-full w-full'/>, id: '0',
 },
 {
-  stack: 'JavaScript', icon: <FaReact/>, id: '0',
+  stack: 'CSS', icon: <FaCss3Alt className='h-full w-full'/>, id: '0',
 },
+{
+  stack: 'HTML', icon: <FaHtml5 className='h-full w-full'/>, id: '0',
+},
+{
+  stack: 'React', icon: <FaReact className='h-full w-full'/>, id: '0',
+},
+{
+  stack: 'Tailwind', icon: <RiTailwindCssFill className='h-full w-full'/>, id: '0',
+},
+{
+  stack: 'Three.js', icon: <SiThreedotjs className='h-full w-full'/>, id: '0',
+},
+
 ]
 
 const TechStack = () => {
