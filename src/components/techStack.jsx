@@ -3,6 +3,7 @@ import { FaReact, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiThreedotjs } from "react-icons/si";
+import { TbBrandThreejs } from "react-icons/tb";
 
 const techList = [
 {
@@ -21,7 +22,7 @@ const techList = [
   stack: 'Tailwind', icon: <RiTailwindCssFill className='h-full w-full'/>, id: '0',
 },
 {
-  stack: 'Three.js', icon: <SiThreedotjs className='h-full w-full'/>, id: '0',
+  stack: 'Three.js', icon: <TbBrandThreejs className='h-full w-full'/>, id: '0',
 },
 
 ]
@@ -29,20 +30,21 @@ const techList = [
 const TechStack = () => {
 console.log(techList)
   return (
-    <div className='grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-2 '>
-      {techList.map(function(techies){
-        return (
-          <div key={techies.id}>
-            <div className='w-[50px] h-[50px]'>
-              {techies.icon}
-            </div>
-            <p>
-              {techies.stack}
-            </p>
-          </div>
-        )
-      })}
-    </div>
+
+  <div className='grid lg:grid-cols-3 md:grid-cols-2  gap-5 '>
+            {techList.map(function(techies){
+              return (
+                <div key={techies.id} className='  flex items-center flex-col p-1 '>
+                  <div className='w-[50px] h-[50px] '>
+                    {techies.icon}
+                  </div>
+                  <p className=''>
+                    {techies.stack}
+                  </p>
+                </div>
+              )
+            })}
+  </div>
   )
 }
 

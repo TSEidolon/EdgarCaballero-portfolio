@@ -13,10 +13,12 @@ export function BirdsOverview(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/models/birds.glb')
   const { actions, names } = useAnimations(animations, group)
-  // console.log(names)
+
+  // Bird animations
   // useEffect(() => {
   //   actions[names[0]].reset().fadeIn(0.5).play()
   // })
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
