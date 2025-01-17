@@ -15,9 +15,9 @@ export function BirdsOverview(props) {
   const { actions, names } = useAnimations(animations, group)
 
   // Bird animations
-  // useEffect(() => {
-  //   actions[names[0]].reset().fadeIn(0.5).play()
-  // })
+  useEffect(() => {
+    actions[names[0]].reset().fadeIn(0.5).play()
+  })
 
   return (
     <group ref={group} {...props} dispose={null}>
