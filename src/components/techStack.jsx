@@ -2,7 +2,6 @@ import React from 'react'
 import { FaReact, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiThreedotjs } from "react-icons/si";
 import { TbBrandThreejs } from "react-icons/tb";
 
 const techList = [
@@ -34,7 +33,7 @@ console.log(techList)
   <div className='grid lg:grid-cols-3 md:grid-cols-2  gap-5 '>
             {techList.map(function(techies){
               return (
-                <div key={techies.id} className='  flex items-center flex-col p-1 '>
+                <div key={techies.id} className='  flex items-center flex-col p-1 shadow-md shadow-[#88AB8E]'>
                   <div className='w-[50px] h-[50px] '>
                     {techies.icon}
                   </div>
