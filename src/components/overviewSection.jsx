@@ -16,7 +16,7 @@ const OverviewSection = () => {
           <p className='text-start text-lg '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum tenetur ex! Nam, ipsum ipsa iure beatae eaque magni maiores non sapiente earum distinctio eum a aliquam quisquam hic repellat! Nobis, beatae! Dolorem dolorum ex modi quibusdam incidunt repellendus dicta!</p>
         </div>
         <div className='tech-stack-list h-[40%] w-[400px] px-10 '>
-          <p className='text-2xl pb-5'>Tech Stack: </p>
+          <p className='text-2xl pb-5 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]'>Tech Stack: </p>
 
 
           <TechStack/>
