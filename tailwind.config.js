@@ -12,6 +12,7 @@ export default {
         'hero-background-test':"url('src/assets/leavesBannerOne.png')",
         'overview-background':"url('src/assets/leavesShadow.png')",
         'comic-background':"url('src/assets/comicDots.png')",
+        'projects-background':"url('src/assets/plantProjects.png')",
 
       }
     },

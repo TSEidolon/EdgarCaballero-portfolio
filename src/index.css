@@ -18,3 +18,8 @@ body {
 
   font-family: 'Quicksand Book';
 }
+
+.transform-rotate-leaves {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
