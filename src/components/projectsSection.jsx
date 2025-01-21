@@ -1,6 +1,8 @@
 import PlaceholderCat from '../assets/placeholderCat.png'
 import leavesProjects from '../assets/leavesProjects.png'
 import { Parallax } from 'react-scroll-parallax'
+import chameleonLineOne from '../assets/chameleonLineOne.svg'
+import chameleonLine from '../assets/chameleonLine.svg'
 
 const ProjectsSection = () => {
   return (
@@ -47,8 +49,13 @@ const ProjectsSection = () => {
             </div>
           </div>
           <div className='cards-base-right  w-[60%] flex justify-center py-4 pr-4 relative'>
-            <img src={PlaceholderCat} alt="" className='border-2 border-black bg-[color:var(--primary-color)] rounded-md z-0' />
-            <p className='z-10 absolute text-2xl  top-[40%]'> Test </p>
+            <img src={PlaceholderCat} alt="" className='border-2 border-black bg-black rounded-md z-0' />
+            <div className='z-10 absolute bottom-[-4%] left-[2%] flex 
+
+            '>
+              <img src={chameleonLine} alt="" className='h-[70px] w-[70px] ' />
+              <p className=' text-white'> Test </p>
+            </div>
           </div>
         </div>
         <div className='cards-base bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[calc(300px*1.618)] h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md'>
@@ -63,6 +70,7 @@ const ProjectsSection = () => {
           </div>
           <div className='cards-base-right  w-[60%] flex justify-center py-4 pr-4 relative'>
             <img src={PlaceholderCat} alt="" className='border-2 border-black bg-[color:var(--primary-color)] rounded-md z-0' />
+            <img src={chameleonLineOne} alt="" className='h-[70px] w-[70px] absolute bottom-[-4%] left-[2%] drop-shadow-[0_35px_35px_rgba(242, 241, 235, 1)]' />
             <p className='z-10 absolute text-2xl  top-[40%]'> Test </p>
           </div>
         </div>
