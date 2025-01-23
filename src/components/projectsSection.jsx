@@ -7,7 +7,7 @@ import { GrGithub } from "react-icons/gr";
 import { useState } from 'react'
 
 const ProjectsSection = () => {
-const [cardHover, setCardHover] = useState(false);
+
 
 
   return (
@@ -63,7 +63,7 @@ const [cardHover, setCardHover] = useState(false);
             </div>
           </div>
         </div>
-        <div className='cards-base bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[calc(300px*1.618)] h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md' onPointerEnter={e => console.log('onPointerEnter')}>
+        <div className='cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[calc(300px*1.618)] h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md' >
           <div className='cards-base-left  w-[40%] py-4 pl-4  flex-col '>
             <div className='border-2 border-black p-4 h-full flex flex-col items-center justify-between gap-2 bg-[color:var(--primary-color)] rounded-md'>
               <h4>Title:</h4>
@@ -73,10 +73,12 @@ const [cardHover, setCardHover] = useState(false);
               </button>
             </div>
           </div>
-          <div className='cards-base-right  w-[60%] flex justify-center py-4 pr-4 relative'>
+          <div className=' cards-base-right  w-[60%] flex justify-center py-4 pr-4 relative'>
             <img src={PlaceholderCat} alt="" className='border-2 border-black bg-[color:var(--primary-color)] rounded-md z-0' />
-            <img src={chameleonLineOne} alt="" className='h-[70px] w-[70px] absolute bottom-[-4%] left-[2%] drop-shadow-[0_35px_35px_rgba(242, 241, 235, 1)]' />
-            <a href="" className='z-10 absolute h-[40px] w-[40px] bottom-[3%] left-[10%]  m-2'>
+            <img src={chameleonLineOne} alt="" className='z-10 h-[70px] w-[70px] absolute bottom-[-4%] left-[2%]
+            ' />
+            <span className='z-0 absolute border-b-2 border-red-600 w-[0px] ease-in-out duration-700 group-hover:w-[50px] bottom-[9%] left-[26.5%] rounded-md'> </span>
+            <a href="" className='z-10 absolute h-[40px] w-[40px] bottom-[2%] m-2 left-[16%] opacity-0 scale-0 transition-all ease-in-out duration-700  group-hover:left-[40%] group-hover:opacity-100  group-hover:scale-90 '>
               <GrGithub className=' w-full h-full '/> 
             </a>
           </div>
