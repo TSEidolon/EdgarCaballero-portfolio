@@ -9,21 +9,21 @@ const techList = [
   stack: 'Javascript', icon: <IoLogoJavascript className='h-full w-full'/>, id: '0',
 },
 {
-  stack: 'CSS', icon: <FaCss3Alt className='h-full w-full'/>, id: '0',
+  stack: 'CSS', icon: <FaCss3Alt className='h-full w-full'/>, id: '1',
 },
 {
-  stack: 'HTML', icon: <FaHtml5 className='h-full w-full'/>, id: '0',
+  stack: 'HTML', icon: <FaHtml5 className='h-full w-full'/>, id: '2',
 },
 {
-  stack: 'React', icon: <FaReact className='h-full w-full'/>, id: '0',
+  stack: 'React', icon: <FaReact className='h-full w-full'/>, id: '3',
 },
 {
-  stack: 'Tailwind', icon: <RiTailwindCssFill className='h-full w-full'/>, id: '0',
+  stack: 'Tailwind', icon: <RiTailwindCssFill className='h-full w-full'/>, id: '4',
 },
 {
-  stack: 'Three.js', icon: <TbBrandThreejs className='h-full w-full'/>, id: '0',
+  stack: 'Three.js', icon: <TbBrandThreejs className='h-full w-full'/>, id: '5',
 },
-
+// figma, git
 ]
 
 const TechStack = () => {
