@@ -3,6 +3,8 @@ import { FaReact, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandThreejs } from "react-icons/tb";
+import { FaFigma } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
 
 const techList = [
 {
@@ -23,7 +25,13 @@ const techList = [
 {
   stack: 'Three.js', icon: <TbBrandThreejs className='h-full w-full'/>, id: '5',
 },
-// figma, git
+{
+  stack: 'Figma', icon: <FaFigma className='h-full w-full'/>, id: '6',
+},
+{
+  stack: 'Git', icon: <FaGitAlt className='h-full w-full'/>, id: '7',
+},
+
 ]
 
 const TechStack = () => {
