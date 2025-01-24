@@ -24,6 +24,7 @@ function App() {
         <ProjectsSection />
 
         <FooterSection />
+        
       </ParallaxProvider>
        
     </div>

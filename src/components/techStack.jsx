@@ -42,7 +42,7 @@ console.log(techList)
             {techList.map(function(techies){
               return (
                 <div key={techies.id} className='  flex items-center flex-col p-1 shadow-md shadow-[#88AB8E] rounded-md'>
-                  <div className='w-[50px] h-[50px] '>
+                  <div className='w-[40px] h-[40px] '>
                     {techies.icon}
                   </div>
                   <p className=''>

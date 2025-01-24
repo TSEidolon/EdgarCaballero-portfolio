@@ -15,7 +15,7 @@ const OverviewSection = () => {
           <p className='text-2xl  pb-5'>Introduction / Overview</p>
           <p className='text-start text-lg '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum tenetur ex! Nam, ipsum ipsa iure beatae eaque magni maiores non sapiente earum distinctio eum a aliquam quisquam hic repellat! Nobis, beatae! Dolorem dolorum ex modi quibusdam incidunt repellendus dicta!</p>
         </div>
-        <div className='tech-stack-list h-[40%] w-[400px] px-10 '>
+        <div className='tech-stack-list h-[50%] w-[400px] px-10 relative'>
           <p className='text-2xl pb-5 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]'>Tech Stack: </p>
 
 
@@ -23,7 +23,7 @@ const OverviewSection = () => {
         </div>
       </section>
 
-      <section className='w-full h-full inset-0 absolute z-20'>
+      <section className='w-full h-full inset-0 absolute z-0'>
         <Canvas className='' >
           <Suspense fallback={<CanvasLoader/>}>
             <PerspectiveCamera  position={[0,0,30]} />
