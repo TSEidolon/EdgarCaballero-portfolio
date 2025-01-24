@@ -66,9 +66,9 @@ const ProjectsSection = () => {
         <div className='cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[calc(300px*1.618)] h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md' >
           <div className='cards-base-left  w-[40%] py-4 pl-4  flex-col '>
             <div className='border-2 border-black p-4 h-full flex flex-col items-center justify-between gap-2 bg-[color:var(--primary-color)] rounded-md'>
-              <h4>Title:</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut voluptatibus in quasi beatae</p>
-              <button className='border-2 border-black px-8 py-1 rounded-xl hover:bg-blue-500'>
+              <h4 className='text-lg font-semibold'>Title:</h4>
+              <p className='pb-1'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut voluptatibus in quasi beatae</p>
+              <button className='border-2 border-gray-800 px-8 py-1 rounded-xl  hover:bg-[color:var(--secondary-color)] hover:scale-105 duration-500 shadow-md shadow-[#88AB8E]'>
                 Visit
               </button>
             </div>
