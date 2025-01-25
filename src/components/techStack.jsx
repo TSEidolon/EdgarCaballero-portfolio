@@ -38,7 +38,7 @@ const TechStack = () => {
 console.log(techList)
   return (
 
-  <div className='grid lg:grid-cols-3 md:grid-cols-2  gap-5 '>
+  <div className='grid grid-cols-3  gap-5 '>
             {techList.map(function(techies){
               return (
                 <div key={techies.id} className='  flex items-center flex-col p-1 shadow-md shadow-[#88AB8E] rounded-md'>
