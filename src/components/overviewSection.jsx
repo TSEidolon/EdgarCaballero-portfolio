@@ -28,7 +28,7 @@ const OverviewSection = () => {
           <Suspense fallback={<CanvasLoader/>}>
             <PerspectiveCamera  position={[0,0,30]} />
             <HeroCamera>
-              <BirdsOverview   scale={1.2} rotation={[.2,1,0]} position={[1.35, 0, 0]}/>
+              <BirdsOverview  scale={1.2} rotation={[.2,1,0]} position={[1.35, 0, 0]}/>
             </HeroCamera>
             <ambientLight intensity={1}/>
             <directionalLight position={[10,10,10]} intensity={0.5}/>
