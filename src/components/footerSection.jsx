@@ -26,9 +26,12 @@ const FooterSection = () => {
         <Canvas className=''>
           <Suspense fallback={CanvasLoader}>
             {/* <OrbitControls  /> */}
-            <Text color="black" anchorX="right" anchorY="middle" onPointerOver={over} onPointerOut={out} onClick={() => console.log('clicked')}>
+            {/* <Text color="black" anchorX="right" anchorY="middle" onPointerOver={over} onPointerOut={out} onClick={() => window.open("https://www.mozilla.org/")}>
               hello world!
             </Text>
+            <Text color="black" anchorX="left" anchorY="middle" onPointerOver={over} onPointerOut={out} onClick={() => window.open("")}>
+              hello world1
+            </Text> */}
             <BeachFooter scale={.5} />
           </Suspense>
         </Canvas>
