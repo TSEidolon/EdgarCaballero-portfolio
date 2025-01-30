@@ -8,26 +8,43 @@ Title: 3 seconds of vacations
 
 
 
-import { useGLTF, useAnimations} from '@react-three/drei'
+import { useGLTF, useAnimations, Html} from '@react-three/drei'
 import { useFrame } from '@react-three/fiber';
-import { useLayoutEffect, useRef } from 'react'
+import { useLayoutEffect, useRef, useState } from 'react'
 
 
+function Annotation({ children, ...props }) {
+  // Use inside a group or mesh
+//   <Annotation position={[0, 0, 0]}>
+//    <span style={{ fontSize: '1.5em' }}>Hello World</span>
+//   </Annotation>
+  return (
+    <Html
+      {...props}
+      transform
+      >
+      <div className="annotation" onClick={() => console.log('.')}>
+        {children}
+      </div>
+    </Html>
+  )
+}
 
-
-export function BeachFooter(props) {
+export function BeachFooterTest(props) {
  
   const group = useRef();
+
+
 
   
   const { nodes, materials, animations } = useGLTF('/models/beachModel.glb')
   const { actions } = useAnimations(animations, group)
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={group} {...props} dispose={null} >
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
           <group name="Root">
-            
+
             <group name="Plane006" position={[-0.185, 0.057, -0.669]} scale={0.264}>
               <mesh
                 name="Plane006_0"
@@ -820,4 +837,3 @@ export function BeachFooter(props) {
 }
 
 useGLTF.preload('/models/beachModel.glb')
-

@@ -1,6 +1,6 @@
 import {useState, useEffect, Suspense} from 'react';
 import {Canvas} from '@react-three/fiber';
-import { PerspectiveCamera, OrbitControls, Text, ScrollControls} from '@react-three/drei';
+import { PerspectiveCamera, OrbitControls, Text} from '@react-three/drei';
 import CanvasLoader from './canvasLoader';
 import { BeachFooter } from './beachFooter';
 
@@ -31,12 +31,9 @@ const FooterSection = () => {
             {/* <Text color="black" anchorX={3} anchorY="middle" fontSize={.1} onPointerOver={over} onPointerOut={out} onClick={() => window.open("https://www.mozilla.org/")} >
               hello world!
             </Text> */}
-            {/* <Text color="black" anchorX="left" anchorY="middle" onPointerOver={over} onPointerOut={out} onClick={() => window.open("")}>
-              hello world1
-            </Text> */}
-            <ScrollControls pages={3} damping={0.25}>
-              <BeachFooter scale={.5} />
-            </ScrollControls>
+
+            <BeachFooter scale={.5} />
+
           </Suspense>
         </Canvas>
 
