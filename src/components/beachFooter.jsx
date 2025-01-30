@@ -6,11 +6,40 @@ Source: https://sketchfab.com/3d-models/3-seconds-of-vacations-a5b47f042b854aa88
 Title: 3 seconds of vacations
 */
 
-import React, { useRef } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
+
+import gsap from "gsap"
+import { useGLTF, useAnimations, useScroll, Text } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber';
+import { useLayoutEffect, useRef } from 'react'
+
+
+export const FLOOR_HEIGHT = 2.3;
+export const NB_FLOORS = 3;
 
 export function BeachFooter(props) {
-  const group = useRef()
+  const tl = useRef();
+  // const ref = useRef();
+  const group = useRef();
+
+  const scroll = useScroll();
+
+  useFrame(() => {
+    tl.current.seek(scroll.offset * tl.current.duration())
+  })
+
+  useLayoutEffect(() => {
+    tl.current = gsap.timeline();
+
+    // VERTICAL ANIMATION
+    tl.current.to(
+      group.current.position,
+      {
+        duration: 2,
+        y: -FLOOR_HEIGHT * (NB_FLOORS - 1),
+      },
+      0
+    ); })
+
   const { nodes, materials, animations } = useGLTF('/models/beachModel.glb')
   const { actions } = useAnimations(animations, group)
   return (
@@ -18,6 +47,7 @@ export function BeachFooter(props) {
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
           <group name="Root">
+            
             <group name="Plane006" position={[-0.185, 0.057, -0.669]} scale={0.264}>
               <mesh
                 name="Plane006_0"
