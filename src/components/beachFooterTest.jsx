@@ -8,9 +8,10 @@ Title: 3 seconds of vacations
 
 
 
-import { useGLTF, useAnimations, Html} from '@react-three/drei'
+import { useGLTF, useAnimations, Html, useScroll} from '@react-three/drei'
 import { useFrame } from '@react-three/fiber';
 import { useLayoutEffect, useRef, useState } from 'react'
+import gsap from "gsap";
 
 
 function Annotation({ children, ...props }) {

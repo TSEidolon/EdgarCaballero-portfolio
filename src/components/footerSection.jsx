@@ -8,8 +8,7 @@ import { BeachFooter } from './beachFooter';
 
 const FooterSection = () => {
   const [hovered, SetHovered] = useState(false)
-  const over = () => SetHovered(true)
-  const out = () => SetHovered(false)
+
 
   useEffect(() =>{
     if (hovered) document.body.style.cursor = 'pointer'
