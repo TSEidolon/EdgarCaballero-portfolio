@@ -6,7 +6,7 @@ Source: https://sketchfab.com/3d-models/birds-5b957f503ad040a4bcf850680f9f6b45
 Title: birds
 */
 
-import React, { useRef, useEffect } from 'react'
+import { useRef, useEffect } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 
 export function BirdsOverview(props) {
