@@ -2,8 +2,7 @@ import {useState, useEffect, Suspense, useRef} from 'react';
 import {Canvas} from '@react-three/fiber';
 import { PerspectiveCamera, OrbitControls, Text} from '@react-three/drei';
 import CanvasLoader from './canvasLoader';
-import { BeachFooterTest } from './beachFooterTest';
-
+import { GeckoFooterTest } from './geckoFooterTest';
 
 
 const FooterSectionTest = () => {
@@ -23,11 +22,9 @@ const FooterSectionTest = () => {
         <Canvas className=''>
           <Suspense fallback={CanvasLoader}>
             <OrbitControls enableZoom={false} />
-
-              <BeachFooterTest scale={.5} />
-
-            
-
+            <ambientLight intensity={1.2}/>
+            <directionalLight position={[0,2,0]} intensity={1}/>
+            <GeckoFooterTest scale={2.5}/>
           </Suspense>
         </Canvas>
 
