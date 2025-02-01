@@ -11,14 +11,18 @@ export function GeckoFooterTest({animationName = 'idle',...props}) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/models/geckoAnimations.glb')
 
- const {animations: idleAnimation} = useGLTF('/models/animations/Gecko_Idle_A.glb')
- const {animations: bounceAnimation} = useGLTF('/models/animations/Gecko_Bounce.glb')
+  const {animations: idleAnimation} = useGLTF('/models/animations/Gecko_Idle_A.glb')
+  const {animations: bounceAnimation} = useGLTF('/models/animations/Gecko_Bounce.glb')
+  const {animations: flyAnimation} = useGLTF('/models/animations/Gecko_Fly.glb')
+  const {animations: spinAnimation} = useGLTF('/models/animations/Gecko_Spin.glb')
 
   idleAnimation[0].name = 'idle';
   bounceAnimation[0].name = 'bounce';
+  flyAnimation[0].name = 'fly';
+  spinAnimation[0].name = 'spin';
   console.log(animationName)
 
-  const { actions} = useAnimations([idleAnimation[0],bounceAnimation[0]], group)
+  const { actions} = useAnimations([idleAnimation[0],bounceAnimation[0],flyAnimation[0],spinAnimation[0]], group)
    
   useEffect(() => {
     actions[animationName].reset().setEffectiveTimeScale(.4).fadeIn(0.5).play();

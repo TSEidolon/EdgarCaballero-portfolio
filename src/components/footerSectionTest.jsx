@@ -9,10 +9,10 @@ const FooterSectionTest = () => {
   const [animationName, setAnimationName] = useState('idle')
 
   return (
-    <div className='h-screen border-2 border-black relative flex justify-center items-center'>
+    <div className='h-screen border-2 border-black relative flex justify-center items-center bg-[color:var(--primary-color)]'>
       <section className='Left-area-section p-10'>
         <div className='p-10  w-[400px] h-[400px] z-0 border-2 border-green-500'>
-          <p      onClick={() => setAnimationName("bounce")}
+          <p      onClick={() => setAnimationName("spin")}
                   onPointerOver={() => setAnimationName("bounce")}
                   onPointerOut={() => setAnimationName('idle')}
           >
@@ -20,9 +20,9 @@ const FooterSectionTest = () => {
           </p>
         </div>
       </section>
-      <section className='right-area-section w-[60%] h-full z-0 '>
+      <section className='right-area-section w-[60%] p-[5rem] h-full z-0 '>
 
-        <Canvas className=''>
+        <Canvas className='border-2 border-blue-600'>
           <Suspense fallback={CanvasLoader}>
             <OrbitControls enableZoom={false} />
             <ambientLight intensity={1.2}/>
