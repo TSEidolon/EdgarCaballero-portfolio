@@ -17,7 +17,7 @@ const FooterSectionTest = () => {
     z-0 bg-cover bg-center bg-no-repeat h-screen border-2 border-black relative flex flex-col justify-center items-center bg-[color:var(--primary-color)]'>
       <section className='relative flex justify-center items-center h-full w-full'>
         <section className='Left-area-section p-10 w-[50%] h-full '>
-        <div className='py-10  pl-[6rem] flex justify-center items-center flex-col w-full h-full z-0 '>
+        <div className='py-10  pl-[10rem] flex justify-center items-center flex-col w-full h-full z-0 '>
           <p className='pb-5 text-5xl'>
             Get In Touch!
           </p>
@@ -26,7 +26,7 @@ const FooterSectionTest = () => {
               onPointerOver={() => setAnimationName("fly")}
               onPointerOut={() => setAnimationName('idle')}
             >
-              <button onClick={()=> window.open("https://github.com/TSEidolon")} className='w-[50px] h-[70px] border-2 border-black rounded-md p-1 absolute left-[-6%] bg-[color:var(--secondary-color)] hover:bg-[color:var(--tertiary-color)]'>
+              <button onClick={()=> window.open("https://github.com/TSEidolon")} className='w-[50px] h-[70px] border-2 border-black rounded-md p-1 absolute left-[-5%] bg-[color:var(--secondary-color)] hover:bg-[color:var(--tertiary-color)]'>
               <IoLogoGithub className='w-full h-full ' />
               </button>
               <p className='flex'>
@@ -38,7 +38,7 @@ const FooterSectionTest = () => {
                onPointerOver={() => setAnimationName("bounce")}
                onPointerOut={() => setAnimationName('idle')}
             >
-              <button onClick={()=> window.open("https://www.linkedin.com/in/edgar-francis-caballero-477556238/")} className='w-[50px] h-[70px] border-2 border-black rounded-md p-1 absolute left-[-6%] bg-[color:var(--secondary-color)] hover:bg-[color:var(--tertiary-color)]'>
+              <button onClick={()=> window.open("https://www.linkedin.com/in/edgar-francis-caballero-477556238/")} className='w-[50px] h-[70px] border-2 border-black rounded-md p-1 absolute left-[-5%] bg-[color:var(--secondary-color)] hover:bg-[color:var(--tertiary-color)]'>
               <CiLinkedin className='w-full h-full ' />
               </button>
               <div className='flex'>
@@ -50,7 +50,7 @@ const FooterSectionTest = () => {
               onPointerOver={() => setAnimationName("spin")}
               onPointerOut={() => setAnimationName('idle')}
             >
-              <button onClick={()=> window.open("mailto:efrcaballero@gmail.com")} className='w-[50px] h-[70px] border-2 border-black rounded-md p-1 absolute left-[-6%] bg-[color:var(--secondary-color)] hover:bg-[color:var(--tertiary-color)]'>
+              <button onClick={()=> window.open("mailto:efrcaballero@gmail.com")} className='w-[50px] h-[70px] border-2 border-black rounded-md p-1 absolute left-[-5%] bg-[color:var(--secondary-color)] hover:bg-[color:var(--tertiary-color)]'>
               <IoMailOpenOutline className='w-full h-full ' />
               </button>
               <div className='flex'>

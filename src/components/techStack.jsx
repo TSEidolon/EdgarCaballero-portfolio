@@ -6,7 +6,7 @@ import { TbBrandThreejs } from "react-icons/tb";
 import { FaFigma } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 
-const techList = [
+export const techList = [
 {
   stack: 'Javascript', icon: <IoLogoJavascript className='h-full w-full'/>, id: '0',
 },
