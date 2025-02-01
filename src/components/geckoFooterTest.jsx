@@ -8,11 +8,15 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 export function GeckoFooterTest(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/models/geckoAnimations.glb')
+
+ 
+
   const { actions, names } = useAnimations(animations, group)
-  
-  console.log(actions[names[8]])
+   
+  const fly = names[6]
+  console.log(names[8])
   useEffect (() => {
-    actions[names[8]].reset().setEffectiveTimeScale(.3).fadeIn(.5).play()
+    actions[fly].reset().setEffectiveTimeScale(.3).fadeIn(.5).play()
   })
 
   return (

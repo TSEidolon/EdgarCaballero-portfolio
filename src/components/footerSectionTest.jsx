@@ -11,8 +11,8 @@ const FooterSectionTest = () => {
   return (
     <div className='h-screen border-2 border-black relative'>
       <section className='Left-area-section p-10'>
-        <div className='p-10 w-[400px] h-[400px] z-10 border-2 border-green-500'>
-          <p>
+        <div className='p-10  w-[400px] h-[400px] z-10 border-2 border-green-500'>
+          <p >
             Test Area
           </p>
         </div>
