@@ -23,3 +23,29 @@ body {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
+
+
+.link-rows:after {
+  content: '';
+  position: absolute;
+  width: 75%;
+  height: 2px;
+
+  bottom: 0%;
+  transform: translate(0, -50%);
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.507) 0%, rgba(242,241,235,1) 100%);
+  display: block; 
+}
+
+.link-rows:hover:after {
+  content: '';
+  position: absolute;
+  width: 75%;
+  height: 2px;
+
+  bottom: 0%;
+  transform: translate(0, -50%);
+  background: radial-gradient(circle, rgba(136,171,142,1) 50%, rgba(242,241,235,1) 100%);
+  display: block; 
+}
