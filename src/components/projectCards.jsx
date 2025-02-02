@@ -9,15 +9,52 @@ import { GrGithub } from "react-icons/gr";
 
 const projectInfo = [
   {
-    title: "Fenix Furniture", body: `"A furniture website used to practice the "Shopping Cart" function in React with Tailwind"`, website: "https://fenix-furniture-tseidolon.netlify.app/", github: "https://github.com/TSEidolon/Fenix-Furniture-TSEidolon", image: FenixFurniture, chameleon: chameleonLineBlack, id: "1"
-  }
+    title: "Fenix Furniture", 
+    body: `"A furniture website used to practice the "Shopping Cart" function in React with Tailwind"`, 
+    website: "https://fenix-furniture-tseidolon.netlify.app/", 
+    github: "https://github.com/TSEidolon/Fenix-Furniture-TSEidolon", 
+    image: FenixFurniture, 
+    additionalClass: " object-contain bg-zinc-200",
+    chameleon: chameleonLineBlack, 
+    id: "1"
+  },
+  {
+    title: "Kol Slayer", 
+    body: `"A responsive game website used to practice the basics of React by utilizing hooks. Styled with Tailwind"`, 
+    website: "https://kolslayer-tseidolon.netlify.app/", 
+    github: "https://github.com/TSEidolon/kolslayer-website-tseidolon", 
+    image: KolSlayer, 
+    additionalClass: " object-cover ",
+    chameleon: chameleonLineWhite, 
+    id: "2"
+  },
+  {
+    title: "Protoss Gym", 
+    body: `"An upcoming gym coming to a galaxy near you. Built using HTML, vanilla CSS, and JavaScript"`, 
+    website: "https://protoss-gym-tseidolon.netlify.app/", 
+    github: "https://github.com/TSEidolon/protoss-gym-tseidolon", 
+    image: ProtossGym, 
+    additionalClass: " object-cover " ,
+    chameleon: chameleonLineWhite, 
+    id: "3"
+  },
+  {
+    title: "Fenix Furniture", 
+    body: `"A furniture website used to practice the "Shopping Cart" function in React with Tailwind"`, 
+    website: "https://fenix-furniture-tseidolon.netlify.app/", 
+    github: "https://github.com/TSEidolon/Fenix-Furniture-TSEidolon", 
+    image: FenixFurniture, 
+    additionalClass: " bg-blue-500",
+    chameleon: chameleonLineBlack, 
+    id: "4"
+  },
 ]
 
 
 const ProjectCards = () => {
   console.log(projectInfo[0].image)
   return (
-    <div>
+    <div className='grid lg:grid-cols-2 md:grid-cols-1 gap-12 p-2'>
     {projectInfo.map(function(cardsInfo){
           return (
       <div className='cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[calc(350px*1.618)] h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md' >
@@ -32,7 +69,7 @@ const ProjectCards = () => {
           </div>
         </div>
         <div className=' cards-base-right  w-[60%] flex justify-center py-4 pr-4 relative'>
-          <img src={cardsInfo.image} alt="" className='border-2 border-black  rounded-md z-0 bg-zinc-200 object-contain' />
+          <img src={cardsInfo.image} alt="" className={`"border-2 border-black  rounded-md z-0 " + ${cardsInfo.additionalClass}`}  />
           <img src={cardsInfo.chameleon} alt="" className='z-10 h-[70px] w-[70px] absolute bottom-[-4%] left-[2%]
           ' />
 
