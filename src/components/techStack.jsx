@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaReact, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -35,17 +34,17 @@ export const techList = [
 ]
 
 const TechStack = () => {
-console.log(techList)
+
   return (
 
-  <div className='grid grid-cols-3  gap-5 '>
+  <div className='grid grid-cols-4 lg:grid-cols-3  gap-5 '>
             {techList.map(function(techies){
               return (
-                <div key={techies.id} className='  flex items-center flex-col p-1 shadow-md shadow-[#88AB8E] rounded-md'>
-                  <div className='w-[40px] h-[40px] '>
+                <div key={techies.id} className='  flex items-center flex-col p-2 lg:p-1 shadow-md shadow-[#88AB8E] rounded-md'>
+                  <div className='w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] '>
                     {techies.icon}
                   </div>
-                  <p className=''>
+                  <p className='text-[.60rem] lg:text-base '>
                     {techies.stack}
                   </p>
                 </div>

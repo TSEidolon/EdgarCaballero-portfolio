@@ -8,13 +8,13 @@ import chameleonLineWhite from '../assets/chameleonLine.svg'
 import { GrGithub } from "react-icons/gr";
 import { useState } from 'react'
 import { Parallax } from 'react-scroll-parallax'
-
+import ProjectCards from './projectCards'
 
 const ProjectsSection = () => {
 
 
   return (
-    <div className=' z-0 h-screen bg-[color:var(--primary-color)] relative bg-projects-background bg-contain bg-no-repeat bg-bottom flex justify-center items-center'>
+    <div className=' z-0 h-full lg:h-screen bg-[color:var(--primary-color)] relative bg-projects-background bg-contain bg-no-repeat bg-bottom flex justify-center items-center'>
       <section className='cards-container grid lg:grid-cols-2 md:grid-cols-1 gap-12 p-10 '>
         <div className='cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[calc(350px*1.618)] h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md' >
           <div className='cards-base-left  w-[40%] py-4 pl-4  flex-col '>
@@ -37,7 +37,8 @@ const ProjectsSection = () => {
             </a>
           </div>
         </div>
-        <div className='cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[calc(350px*1.618)] h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md' >
+        <ProjectCards />
+        {/* <div className='cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[calc(350px*1.618)] h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md' >
           <div className='cards-base-left  w-[40%] py-4 pl-4  flex-col '>
             <div className='border-2 border-black p-4 h-full flex flex-col items-center justify-between gap-2 bg-[color:var(--primary-color)] rounded-md'>
               <h4 className='text-xl font-semibold'>Kol Slayer</h4>
@@ -98,7 +99,7 @@ const ProjectsSection = () => {
               <GrGithub className=' w-full h-full '/> 
             </a>
           </div>
-        </div>
+        </div> */}
       </section>
       <section>
         
