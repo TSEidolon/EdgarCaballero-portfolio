@@ -56,16 +56,16 @@ const projectInfo = [
 const ProjectCards = () => {
   console.log(projectInfo[0].image)
   return (
-    <div className='grid lg:grid-cols-2 md:grid-cols-1 gap-12 p-2'>
+    <div className='grid  xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 gap-12 p-2'>
     {projectInfo.map(function(cardsInfo){
           return (
-      <div className='cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[calc(350px*1.618)] h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md' >
+      <div className='cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[450px] h-[245px] sm:w-[550px] sm:h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md' >
           <div className='cards-base-left  w-[40%] py-4 pl-4  flex-col '>
           <div className='border-2 border-black p-4 h-full flex flex-col items-center justify-between gap-2 bg-[color:var(--primary-color)] rounded-md'>
-              <h4 className='text-xl font-semibold '>{cardsInfo.title}</h4>
-              <p className='pb-1'>{cardsInfo.body} </p>
+              <h4 className='text-base sm:text-xl font-semibold '>{cardsInfo.title}</h4>
+              <p className='pb-1  text-xs sm:text-base'>{cardsInfo.body} </p>
               <button onClick={()=> window.open(cardsInfo.website)}
-              className='border-2 border-gray-800 px-8 py-1 rounded-xl  hover:bg-[color:var(--secondary-color)] hover:scale-105 duration-500 shadow-md shadow-[#88AB8E]'>
+              className='border-2 border-gray-800 px-6 sm:px-8 py-0 sm:py-1 rounded-xl  hover:bg-[color:var(--secondary-color)] hover:scale-105 duration-500 shadow-md shadow-[#88AB8E]'>
                 Visit
               </button>
           </div>
