@@ -7,7 +7,8 @@ import { IoLogoGithub } from "react-icons/io";
 import { CiLinkedin } from "react-icons/ci";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { Parallax } from 'react-scroll-parallax';
-import BorderFrame from "../assets/borderFrame.png"
+
+import FlowerBackground from "../assets/FlowerBackground.png"
 
 const FooterSection = () => {
   const [animationName, setAnimationName] = useState('idle')
@@ -63,7 +64,7 @@ const FooterSection = () => {
         </section>
         <section className='right-area-section   w-[450px] h-[450px] xl:w-[50%] xl:h-full p-[5rem]  z-0 relative'>
         <Parallax speed={-10} className='top-[20%] left-[10%] xl:top-[34%] xl:left-[28%] absolute h-[350px] w-[350px]'>
-            <img src={BorderFrame} alt="" className='-z-10 h-full w-full opacity-90' />
+            <img src={FlowerBackground} alt="" className='-z-10 h-full w-full opacity-90' />
         </Parallax>
         <Canvas className=''>
           <Suspense fallback={CanvasLoader}>
