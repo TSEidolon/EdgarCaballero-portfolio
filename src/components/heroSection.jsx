@@ -3,6 +3,8 @@ import { PerspectiveCamera} from '@react-three/drei'
 import { Suspense } from 'react'
 import { Parallax } from 'react-scroll-parallax';
 import CanvasLoader from './canvasLoader'
+import {useMediaQuery} from 'react-responsive'
+import { calculateSizes } from './features/modelMediaQuery';
 
 import DecryptedText from './features/decryptedText';
 import { CartoonDiorama } from './cartoonDiorama'
@@ -14,13 +16,19 @@ import leavesFalling from "../assets/leavesFalling.png"
 
 
 const HeroSection = () => {
+  const isSmall = useMediaQuery({ maxWidth: 650 });
+  const isMedium = useMediaQuery({ maxWidth: 768 });
+  const isLarge = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
+  const sizes = calculateSizes(isSmall, isMedium, isLarge);
+  
+
   return (
     <section className='bg-hero-background bg-fixed
     z-0 bg-cover bg-center bg-no-repeat min-h-screen bg-[color:var(--primary-color)] relative'>
       <section className='top-hero z-10 bg-hero-background-test
        bg-cover bg-bottom bg-no-repeat 
        h-screen w-full  '>
-        <div className="main-content h-[400px]  flex flex-col justify-center items-center gap-2 lg:text-4xl  text-2xl px-2">
+        <div className="main-content h-[400px]  flex flex-col justify-center items-center gap-2 lg:text-4xl  text-3xl px-2">
           <DecryptedText
             text="Catchphrase here!"
             animateOn="view"
@@ -52,11 +60,11 @@ const HeroSection = () => {
 
       </section>
       <section className=' z-0 bottom-hero w-full h-full inset-0 absolute'>
-        <Canvas className='' >
+        <Canvas className=' ' >
           <Suspense fallback={<CanvasLoader/>}>
             <PerspectiveCamera  position={[0,0,30]} />
             <HeroCamera>
-              <CartoonDiorama scale={.8} position={[0, -1, 0]} rotation={[0, Math.PI/ 2, 0] }/>
+              <CartoonDiorama scale={sizes.dioramaScale} position={sizes.dioramaPosition} rotation={[0, Math.PI/ 2, 0] }/>
             </HeroCamera>
             <ambientLight intensity={1}/>
             <directionalLight position={[10,10,10]} intensity={0.5}/>
