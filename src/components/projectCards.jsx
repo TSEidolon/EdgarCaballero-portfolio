@@ -25,6 +25,7 @@ const projectInfo = [
     github: "https://github.com/TSEidolon/kolslayer-website-tseidolon", 
     image: KolSlayer, 
     additionalClass: " object-cover ",
+    githubColor: " text-white ",
     chameleon: chameleonLineWhite, 
     id: "2"
   },
@@ -35,6 +36,7 @@ const projectInfo = [
     github: "https://github.com/TSEidolon/protoss-gym-tseidolon", 
     image: ProtossGym, 
     additionalClass: " object-cover " ,
+    githubColor: " text-white ",
     chameleon: chameleonLineWhite, 
     id: "3"
   },
@@ -74,7 +76,7 @@ const ProjectCards = () => {
           ' />
 
           <a href={cardsInfo.github} target="_blank" className='z-10 absolute h-[40px] w-[40px] bottom-[2%] m-2 left-[16%] opacity-0 scale-0 transition-all ease-in-out duration-700  group-hover:left-[40%] group-hover:opacity-100  group-hover:scale-90 '>
-            <GrGithub className=' w-full h-full '/> 
+            <GrGithub className={`" w-full h-full " + ${cardsInfo.githubColor}`}/> 
           </a>
         </div>
       </div>
