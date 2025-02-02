@@ -4,7 +4,7 @@ import { Suspense } from 'react'
 import { Parallax } from 'react-scroll-parallax';
 import CanvasLoader from './canvasLoader'
 
-import DecryptedText from './decryptedText';
+import DecryptedText from './features/decryptedText';
 import { CartoonDiorama } from './cartoonDiorama'
 import HeroCamera from './heroCamera'
 import leavesFallingOne from "../assets/leavesFallingOne.png"

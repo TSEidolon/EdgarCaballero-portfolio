@@ -20,7 +20,7 @@ const ProjectsSection = () => {
           <div className='cards-base-left  w-[40%] py-4 pl-4  flex-col '>
             <div className='border-2 border-black p-4 h-full flex flex-col items-center justify-between gap-2 bg-[color:var(--primary-color)] rounded-md'>
               <h4 className='text-xl font-semibold '>Fenix Furniture</h4>
-              <p className='pb-1 text-center'>A furniture website used to practice the "Shopping Cart" function in React with Tailwind </p>
+              <p className='pb-1'>A furniture website used to practice the "Shopping Cart" function in React with Tailwind </p>
               <button onClick={()=> window.open("https://fenix-furniture-tseidolon.netlify.app/")}
               className='border-2 border-gray-800 px-8 py-1 rounded-xl  hover:bg-[color:var(--secondary-color)] hover:scale-105 duration-500 shadow-md shadow-[#88AB8E]'>
                 Visit

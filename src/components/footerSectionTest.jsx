@@ -14,7 +14,7 @@ const FooterSectionTest = () => {
 
   return (
     <div className='bg-hero-background bg-fixed
-    z-0 bg-cover bg-center bg-no-repeat h-screen border-2 border-black relative flex flex-col justify-center items-center bg-[color:var(--primary-color)]'>
+    z-0 bg-cover bg-center bg-no-repeat h-screen  relative flex flex-col justify-center items-center bg-[color:var(--primary-color)]'>
       <section className='relative flex justify-center items-center h-full w-full'>
         <section className='Left-area-section p-10 w-[50%] h-full '>
         <div className='py-10  pl-[10rem] flex justify-center items-center flex-col w-full h-full z-0 '>

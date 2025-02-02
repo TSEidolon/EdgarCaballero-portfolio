@@ -6,14 +6,24 @@ import CanvasLoader from './canvasLoader'
 import { BirdsOverview } from './birdsOverview';
 import TechStack from './techStack';
 import HeroCamera from './heroCamera';
+import TrueFocus from './features/trueFocus';
+
 
 const OverviewSection = () => {
   return (
     <div className='bg-overview-background bg-right-top bg-no-repeat bg-contain  h-screen bg-[color:var(--primary-color)] relative'>
       <section className='z-10 h-screen w-[60%] flex py-12 items-stretch justify-center flex-col pl-[14.5rem]'>
         <div className='introduction h-[50%] pt-[5rem] px-10'>
-          <p className='text-2xl  pb-5'>Introduction / Overview</p>
+          <TrueFocus 
+            sentence="Introduction and Overview"
+            manualMode={false}
+            blurAmount={1}
+            borderColor="red"
+            animationDuration={1}
+            pauseBetweenAnimations={1}
+            />
           <p className='text-start text-lg '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatum tenetur ex! Nam, ipsum ipsa iure beatae eaque magni maiores non sapiente earum distinctio eum a aliquam quisquam hic repellat! Nobis, beatae! Dolorem dolorum ex modi quibusdam incidunt repellendus dicta!</p>
+
         </div>
         <div className='tech-stack-list h-[50%] w-[400px] px-10 relative'>
           <p className='text-2xl pb-5 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]'>Tech Stack: </p>
