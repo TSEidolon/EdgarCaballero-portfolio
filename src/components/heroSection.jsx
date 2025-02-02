@@ -4,11 +4,14 @@ import { Suspense } from 'react'
 import { Parallax } from 'react-scroll-parallax';
 import CanvasLoader from './canvasLoader'
 
+import DecryptedText from './decryptedText';
 import { CartoonDiorama } from './cartoonDiorama'
 import HeroCamera from './heroCamera'
 import leavesFallingOne from "../assets/leavesFallingOne.png"
 import leavesFallingTwo from "../assets/leavesFallingTwo.png"
 import leavesFalling from "../assets/leavesFalling.png"
+
+
 
 const HeroSection = () => {
   return (
@@ -18,8 +21,17 @@ const HeroSection = () => {
        bg-cover bg-bottom bg-no-repeat 
        h-screen w-full  '>
         <div className="main-content h-[400px]  flex flex-col justify-center items-center gap-2 text-4xl">
-          <p>CatchPhrase Here!</p>
-          <p>Secondary Catchphrase Here!</p>
+          <DecryptedText
+            text="Catchphrase here!"
+            animateOn="view"
+            revealDirection="start"
+          />
+          <DecryptedText
+            text="Secondary Catchphrase here!"
+            animateOn="view"
+            revealDirection="end"
+          />
+
         </div>
         <Parallax  speed={10} className='leaves-1 -z-10 absolute top-[40%] right-[10%]'>
           <img src={leavesFallingOne} alt="" className='h-[300px] w-[500]' />
