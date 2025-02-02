@@ -7,7 +7,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 
 
-export function GeckoFooterTest({animationName = 'idle',...props}) {
+export function GeckoFooter({animationName = 'idle',...props}) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/models/geckoAnimations.glb')
 

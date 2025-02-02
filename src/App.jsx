@@ -5,7 +5,6 @@ import OverviewSection from "./components/overviewSection.jsx"
 import { ParallaxProvider } from 'react-scroll-parallax';
 import ProjectsSection from "./components/projectsSection.jsx";
 import FooterSection from "./components/footerSection.jsx";
-import FooterSectionTest from "./components/footerSectionTest.jsx";
 
 
 function App() {
@@ -23,7 +22,7 @@ function App() {
         
         <ProjectsSection />
 
-        <FooterSectionTest />
+        <FooterSection />
         
       </ParallaxProvider>
        
