@@ -1,10 +1,9 @@
-import NavBar from "./components/navBar.jsx"
-import HeroSection from "./components/heroSection.jsx"
-// import HeroSectionTest from "./components/heroSectionTest.jsx"
-import OverviewSection from "./components/overviewSection.jsx"
+import NavBar from "./components/pages/navBar.jsx"
+import HeroSection from "./components/pages/heroSection.jsx"
+import OverviewSection from "./components/pages/overviewSection.jsx"
 import { ParallaxProvider } from 'react-scroll-parallax';
-import ProjectsSection from "./components/projectsSection.jsx";
-import FooterSection from "./components/footerSection.jsx";
+import ProjectsSection from "./components/pages/projectsSection.jsx";
+import FooterSection from "./components/pages/footerSection.jsx";
 
 
 function App() {

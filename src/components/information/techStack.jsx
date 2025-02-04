@@ -5,7 +5,7 @@ import { TbBrandThreejs } from "react-icons/tb";
 import { FaFigma } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
-import r3fLogo from "../assets/r3fLogo.png"
+import r3fLogo from "../../assets/r3fLogo.png"
 
 
 export const techList = [

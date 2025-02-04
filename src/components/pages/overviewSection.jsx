@@ -2,13 +2,13 @@ import {Canvas} from '@react-three/fiber';
 import { PerspectiveCamera} from '@react-three/drei';
 import { Suspense } from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import CanvasLoader from './canvasLoader';
-import { BirdsOverview } from './birdsOverview';
-import TechStack from './techStack';
-import HeroCamera from './heroCamera';
-import TrueFocus from './features/trueFocus';
+import CanvasLoader from '../features/canvasLoader';
+import { BirdsOverview } from '../modelComponents/birdsOverview';
+import TechStack from '../information/techStack';
+import HeroCamera from '../features/heroCamera';
+import TrueFocus from '../features/trueFocus';
 import {useMediaQuery} from 'react-responsive';
-import { calculateSizes } from './features/modelMediaQuery';
+import { calculateSizes } from '../features/modelMediaQuery';
 
 const OverviewSection = () => {
   const isSmall = useMediaQuery({ maxWidth: 650 });

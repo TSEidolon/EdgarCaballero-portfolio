@@ -2,16 +2,16 @@ import {Canvas} from '@react-three/fiber';
 import { PerspectiveCamera} from '@react-three/drei';
 import { Suspense } from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import CanvasLoader from './canvasLoader';
+import CanvasLoader from '../features/canvasLoader';
 import {useMediaQuery} from 'react-responsive';
-import { calculateSizes } from './features/modelMediaQuery';
+import { calculateSizes } from '../features/modelMediaQuery';
 
-import DecryptedText from './features/decryptedText';
-import { CartoonDiorama } from './cartoonDiorama';
-import HeroCamera from './heroCamera';
-import leavesFallingOne from "../assets/leavesFallingOne.png";
-import leavesFallingTwo from "../assets/leavesFallingTwo.png";
-import leavesFalling from "../assets/leavesFalling.png";
+import DecryptedText from '../features/decryptedText';
+import { CartoonDiorama } from '../modelComponents/cartoonDiorama';
+import HeroCamera from '../features/heroCamera';
+import leavesFallingOne from "../../assets/leavesFallingOne.png";
+import leavesFallingTwo from "../../assets/leavesFallingTwo.png";
+import leavesFalling from "../../assets/leavesFalling.png";
 
 
 

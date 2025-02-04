@@ -1,14 +1,15 @@
 import {useState, useEffect, Suspense, useRef} from 'react';
 import {Canvas} from '@react-three/fiber';
 import { PerspectiveCamera, OrbitControls} from '@react-three/drei';
-import CanvasLoader from './canvasLoader';
-import { GeckoFooter } from './geckoFooter';
+import CanvasLoader from '../features/canvasLoader';
+import { GeckoFooter } from '../modelComponents/geckoFooter';
 import { IoLogoGithub } from "react-icons/io";
 import { CiLinkedin } from "react-icons/ci";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { Parallax } from 'react-scroll-parallax';
 
-import FlowerBackground from "../assets/FlowerBackground.png"
+
+import GrassBackground from "../../assets/grassBackground.png"
 
 const FooterSection = () => {
   const [animationName, setAnimationName] = useState('idle')
@@ -63,8 +64,8 @@ const FooterSection = () => {
         </div>
         </section>
         <section className='right-area-section   w-[450px] h-[450px] xl:w-[50%] xl:h-full p-[5rem]  z-0 relative'>
-        <Parallax speed={-10} className='top-[20%] left-[10%] xl:top-[34%] xl:left-[28%] absolute h-[350px] w-[350px]'>
-            <img src={FlowerBackground} alt="" className='-z-10 h-full w-full opacity-90' />
+        <Parallax speed={-10} className='top-[22%] left-[17%] xl:top-[22%] xl:left-[25%] absolute h-[250px] w-[250px] xl:h-[400px] xl:w-[400px]'>
+            <img src={GrassBackground} alt="" className='-z-10 h-full w-full opacity-90' />
         </Parallax>
         <Canvas className=''>
           <Suspense fallback={CanvasLoader}>
@@ -79,7 +80,7 @@ const FooterSection = () => {
       </section>
       <section className='footer-footsies h-[80px] w-full bg-[color:var(--quarternary-color)]'>
         <div className='flex items-center justify-center h-full'>
-          Brought to life by Tseidolon, fueled by coffee ‧𓍢ִ໋☕. 
+          Brought to life by Edgar, fueled by coffee ‧𓍢ִ໋☕. 
         </div>
       </section>
     </div>

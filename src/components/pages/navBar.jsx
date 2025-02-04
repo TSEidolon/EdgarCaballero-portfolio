@@ -8,7 +8,7 @@ const NavBar = () => {
       <div className="flex justify-between w-full min-w-[200px]">
         <div className="navBar-left flex justify-start w-[40%] text-2xl
         relative cursor-pointer transition-all ease-in-out  hover:text-green-800 hover:font-semibold text-black">
-          Tseidolon
+          Edgar
         </div>
         <button className=" cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none transition-all focus:outline-none" type="button" onClick={()=> setNavbarOpen(!navbarOpen)}>
         <FaBarsStaggered className={`text-xl relative   ${!navbarOpen ? " flex" : " hidden" }`}/>
