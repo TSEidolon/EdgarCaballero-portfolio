@@ -5,6 +5,7 @@ import { TbBrandThreejs } from "react-icons/tb";
 import { FaFigma } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
+import r3fLogo from "../assets/r3fLogo.png"
 
 
 export const techList = [
@@ -31,6 +32,9 @@ export const techList = [
 },
 {
   stack: 'Git', icon: <FaGitAlt className='h-full w-full'/>, id: '7',
+},
+{
+  stack: 'React3Fiber', icon: <img src={r3fLogo} className="w-full h-full"/> , id: '8',
 },
 
 ]
