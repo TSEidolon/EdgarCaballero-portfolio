@@ -20,7 +20,6 @@ export function GeckoFooter({animationName = 'idle',...props}) {
   bounceAnimation[0].name = 'bounce';
   flyAnimation[0].name = 'fly';
   spinAnimation[0].name = 'spin';
-  console.log(animationName)
 
   const { actions} = useAnimations([idleAnimation[0],bounceAnimation[0],flyAnimation[0],spinAnimation[0]], group)
    

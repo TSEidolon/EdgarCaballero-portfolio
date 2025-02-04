@@ -7,8 +7,10 @@ import { BirdsOverview } from '../modelComponents/birdsOverview';
 import TechStack from '../information/techStack';
 import HeroCamera from '../features/heroCamera';
 import TrueFocus from '../features/trueFocus';
+
 import {useMediaQuery} from 'react-responsive';
 import { calculateSizes } from '../features/modelMediaQuery';
+
 
 const OverviewSection = () => {
   const isSmall = useMediaQuery({ maxWidth: 650 });
@@ -19,6 +21,7 @@ const OverviewSection = () => {
 
   return (
     <div className='bg-overview-background bg-right-top bg-no-repeat bg-contain  h-screen bg-[color:var(--primary-color)] relative'>
+
       <section className='z-10 h-screen w-full lg:w-[75%] flex py-12 items-stretch justify-center flex-col pr-5 pl-5 lg:pr-0 lg:pl-[14.5rem]'>
         <div className='introduction h-[50%] pt-[5rem] px-10'>
           <TrueFocus 

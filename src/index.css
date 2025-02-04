@@ -49,3 +49,37 @@ body {
   background: radial-gradient(circle, rgba(136,171,142,1) 50%, rgba(242,241,235,1) 100%);
   display: block; 
 }
+
+.triangle, .triangleTwo {
+  position: relative;
+  background: #2c3e50;
+  height: 0px;
+}
+
+.triangle::before  {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 60px 60px 60px;
+  border-color: transparent transparent var(--primary-color) transparent;
+  left: 10%;
+  transform: translateX(-50%);
+}
+.triangle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 60px 60px 60px;
+  border-color: transparent transparent var(--primary-color) transparent;
+  left: 25%;
+  transform: translateX(-50%);
+}
+
+
+

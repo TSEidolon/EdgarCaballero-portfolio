@@ -12,7 +12,7 @@ const ProjectsSection = () => {
 
 
   return (
-    <div className=' z-0 h-full lg:h-full xl:h-screen bg-[color:var(--primary-color)] relative bg-projects-background bg-contain bg-no-repeat bg-bottom flex justify-center items-center py-5'>
+    <div className=' z-0 h-full lg:h-full xl:h-screen bg-[color:var(--primary-color)] relative bg-projects-background bg-fixed bg-contain bg-no-repeat bg-bottom flex justify-center items-center py-5'>
       <section className='cards-container  '>
 
         <ProjectCards />

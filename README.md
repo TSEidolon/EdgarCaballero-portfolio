@@ -9,6 +9,10 @@ Live Website:[]()
 
 [Mockup made using Figma](https://www.figma.com/design/lkaa7ASK6EtTHIJQCmZPto/Portfolio?node-id=0-1&t=RMbCdVRTdb73HUjM-1)
 
+Attributions:
+Freepik - [Chameleon Icon](https://www.flaticon.com/free-icon/chameleon_7336277?term=chameleon&page=1&position=76&origin=search&related_id=7336277)
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

@@ -7,19 +7,22 @@ import FooterSection from "./components/pages/footerSection.jsx";
 
 
 function App() {
-
+  
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <ParallaxProvider>
 
         <NavBar/>
-  
-        <HeroSection/>
+
+        <HeroSection />
+        <section class="triangle"></section>
+
 
         <OverviewSection/>
         
         <ProjectsSection />
+
 
         <FooterSection />
         

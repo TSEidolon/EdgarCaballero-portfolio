@@ -45,7 +45,6 @@ const TechStack = () => {
     rootMargin: "-100px 0px",
   });
 
-  console.log(inView)
   return (
 
   <div  className= "grid grid-cols-4 lg:grid-cols-3 gap-5"  >
