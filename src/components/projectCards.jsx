@@ -6,6 +6,7 @@ import leavesProjects from '../assets/leavesProjects.png'
 import chameleonLineBlack from '../assets/chameleonLineOne.svg'
 import chameleonLineWhite from '../assets/chameleonLine.svg'
 import { GrGithub } from "react-icons/gr";
+import { useInView } from "react-intersection-observer";
 
 const projectInfo = [
   {
@@ -54,13 +55,23 @@ const projectInfo = [
 
 
 const ProjectCards = () => {
-  console.log(projectInfo[0].image)
+  const {ref, inView } = useInView({
+    
+  });
   return (
-    <div className='grid  xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 gap-12 p-2'>
+    <div ref={ref} className='grid  xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 gap-12 p-2'>
     {projectInfo.map(function(cardsInfo){
           return (
-      <div className='cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[450px] h-[245px] sm:w-[550px] sm:h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md' >
-          <div className='cards-base-left  w-[40%] py-4 pl-4  flex-col '>
+      <div ref={ref} className={`cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[450px] h-[245px] sm:w-[550px] sm:h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md transition-all  ease-in-out odd:delay-150 even:delay-300 ${
+        inView
+        ? "opacity-100 translate-x-0 "
+        : "opacity-0 translate-x-[100%] "
+        }`} >
+        <div ref={ref} className={`cards-base-left  w-[40%] py-4 pl-4  flex-col transition-all ease-in-out delay-500 ${
+        inView
+        ? "opacity-100 translate-x-0 "
+        : "opacity-0 translate-x-[-100%] "
+        }`} >
           <div className='border-2 border-black p-4 h-full flex flex-col items-center justify-between gap-2 bg-[color:var(--primary-color)] rounded-md'>
               <h4 className='text-base sm:text-xl font-semibold '>{cardsInfo.title}</h4>
               <p className='pb-1  text-xs sm:text-base'>{cardsInfo.body} </p>
@@ -70,8 +81,12 @@ const ProjectCards = () => {
               </button>
           </div>
         </div>
-        <div className=' cards-base-right  w-[60%] flex justify-center py-4 pr-4 relative'>
-          <img src={cardsInfo.image} alt="" className={`"border-2 border-black  rounded-md z-0 " + ${cardsInfo.additionalClass}`}  />
+        <div ref={ref} className= {`cards-base-right  w-[60%] flex justify-center py-4 pr-4 transition-all ease-in-out delay-[600ms] ${
+        inView
+        ? "opacity-100 translate-x-0 "
+        : "opacity-0 translate-x-[-100%] "
+        }`} >
+          <img src={cardsInfo.image} alt="" className={`" border-2 border-black  rounded-md z-0 " + ${cardsInfo.additionalClass}`}  />
           <img src={cardsInfo.chameleon} alt="" className='z-10 h-[70px] w-[70px] absolute bottom-[-4%] left-[2%]
           ' />
 

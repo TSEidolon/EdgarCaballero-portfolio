@@ -4,6 +4,8 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandThreejs } from "react-icons/tb";
 import { FaFigma } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+
 
 export const techList = [
 {
@@ -35,12 +37,21 @@ export const techList = [
 
 const TechStack = () => {
 
+  const {ref, inView } = useInView({
+    rootMargin: "-100px 0px",
+  });
+
+  console.log(inView)
   return (
 
-  <div className='grid grid-cols-4 lg:grid-cols-3  gap-5 '>
+  <div  className= "grid grid-cols-4 lg:grid-cols-3 gap-5"  >
             {techList.map(function(techies){
               return (
-                <div key={techies.id} className='  flex items-center flex-col p-2 lg:p-1 shadow-md shadow-[#88AB8E] rounded-md'>
+                <div ref={ref} key={techies.id} className={`flex items-center flex-col p-2 lg:p-1 shadow-md shadow-[#88AB8E] rounded-md even:delay-150 odd:delay-300 transition-all ${
+                  inView
+                  ? "opacity-100 translate-x-0 "
+                  : "opacity-0 translate-x-[-100%] "
+                  }`}>
                   <div className='w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] '>
                     {techies.icon}
                   </div>

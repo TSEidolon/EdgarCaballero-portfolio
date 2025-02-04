@@ -10,6 +10,8 @@ import { useState } from 'react'
 import { Parallax } from 'react-scroll-parallax'
 import ProjectCards from './projectCards'
 
+
+
 const ProjectsSection = () => {
 
 
@@ -22,10 +24,10 @@ const ProjectsSection = () => {
       </section>
       <section>
         
-        <Parallax  speed={5} className='leaves-right -z-10 absolute top-[20%] right-[2%] '>
+        <Parallax  speed={10} className='leaves-right -z-10 absolute top-[20%] right-[2%] '>
           <img src={leavesProjects} alt="" className='h-[700px]  w-[50rem] '/>
         </Parallax>
-        <Parallax  speed={5} className='leaves-left -z-10 absolute top-[20%] left-[2%] '>
+        <Parallax  speed={10} className='leaves-left -z-10 absolute top-[20%] left-[2%] '>
           <img src={leavesProjects} alt="" className='h-[700px] w-[50rem] transform-rotate-leaves'/>
         </Parallax>
       </section>
