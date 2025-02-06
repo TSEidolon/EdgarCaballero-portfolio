@@ -20,7 +20,7 @@ import { motion } from 'framer-motion'
 
 export default function DecryptedText({
   text,
-  speed = 50,
+  speed = 70,
   maxIterations = 10,
   sequential = true,
   revealDirection = 'start',

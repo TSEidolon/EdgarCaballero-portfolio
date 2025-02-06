@@ -27,14 +27,14 @@ export default forwardRef (function HeroSection (props,ref) {
       <section className='top-hero z-10 bg-hero-background-test
        bg-cover bg-bottom bg-no-repeat 
        h-screen w-full  '>
-        <div className="main-content h-[400px]  flex flex-col justify-center items-center gap-2 lg:text-4xl  text-3xl px-2">
+        <div className="z-10 main-content h-[400px]  flex flex-col justify-center items-center gap-2 lg:text-4xl  text-3xl px-2">
           <DecryptedText
-            text="Catchphrase here!"
+            text="Hi I'm Edgar Caballero! 👋 "
             animateOn="view"
             revealDirection="start"
           />
           <DecryptedText
-            text="Secondary Catchphrase here!"
+            text="Ready to Build and Innovate"
             animateOn="view"
             revealDirection="end"
           />

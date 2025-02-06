@@ -1,4 +1,4 @@
-As soon as I saw 3d models being utilized in websites, I knew that I had to make my portfolio with these models being the heart of the design. 
+As soon as I saw 3d models being utilized in websites, I knew that I had to make my portfolio with these models being the heart of the design. Opted to use models with lower poly counts to increase load times and performance. 
 
   ### JavaScript Library: 
       - React JS 
@@ -22,6 +22,14 @@ As soon as I saw 3d models being utilized in websites, I knew that I had to make
   - Ha Van - [birds](https://sketchfab.com/3d-models/birds-5b957f503ad040a4bcf850680f9f6b45)
 
   - PNG Images - [PNGWing](https://www.pngwing.com/)
+
+
+<!-- 
+Ready to build and innovate
+Aspiring front-end developer with a passion for enhancing user experiences through UI/UX design and performance optimization. Eager to further develop my skills in both front-end technologies and overall web performance.
+
+Aspiring front-end developer with a background in science, bringing a detail-oriented mindset to UI/UX design and performance optimization. Eager to apply my analytical skills from the lab to web development, continuously expanding my expertise in both front-end technologies and enhancing overall user experiences.
+ -->
 
 # React + Vite
 
