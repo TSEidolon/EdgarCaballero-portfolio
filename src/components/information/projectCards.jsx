@@ -2,6 +2,8 @@ import PlaceholderCat from '../../assets/placeholderCat.png'
 import FenixFurniture from '../../assets/fenixFurnitureWebsite.png'
 import KolSlayer from '../../assets/kolSlayerWebsite.png'
 import ProtossGym from '../../assets/protossGymWebsite.png'
+
+import EdgarPortfolio from "../../assets/edgarPortfolio.png"
 import chameleonLineBlack from '../../assets/chameleonLineOne.svg'
 import chameleonLineWhite from '../../assets/chameleonLine.svg'
 import { GrGithub } from "react-icons/gr";
@@ -10,7 +12,7 @@ import { useInView } from "react-intersection-observer";
 const projectInfo = [
   {
     title: "Fenix Furniture", 
-    body: `"A furniture website used to practice the "Shopping Cart" function in React with Tailwind"`, 
+    body: `A furniture website used to practice the "Shopping Cart" function in React with Tailwind`, 
     website: "https://fenix-furniture-tseidolon.netlify.app/", 
     github: "https://github.com/TSEidolon/Fenix-Furniture-TSEidolon", 
     image: FenixFurniture, 
@@ -20,7 +22,7 @@ const projectInfo = [
   },
   {
     title: "Kol Slayer", 
-    body: `"A responsive game website used to practice the basics of React by utilizing hooks. Styled with Tailwind"`, 
+    body: `A responsive game website used to practice the basics of React by utilizing hooks. Styled with Tailwind`, 
     website: "https://kolslayer-tseidolon.netlify.app/", 
     github: "https://github.com/TSEidolon/kolslayer-website-tseidolon", 
     image: KolSlayer, 
@@ -31,7 +33,7 @@ const projectInfo = [
   },
   {
     title: "Protoss Gym", 
-    body: `"An upcoming gym coming to a galaxy near you. Built using HTML, vanilla CSS, and JavaScript"`, 
+    body: `An upcoming gym coming to a galaxy near you. Built using HTML, vanilla CSS, and JavaScript`, 
     website: "https://protoss-gym-tseidolon.netlify.app/", 
     github: "https://github.com/TSEidolon/protoss-gym-tseidolon", 
     image: ProtossGym, 
@@ -41,12 +43,13 @@ const projectInfo = [
     id: "3"
   },
   {
-    title: "Fenix Furniture", 
-    body: `"A furniture website used to practice the "Shopping Cart" function in React with Tailwind"`, 
-    website: "https://fenix-furniture-tseidolon.netlify.app/", 
-    github: "https://github.com/TSEidolon/Fenix-Furniture-TSEidolon", 
-    image: FenixFurniture, 
+    title: "My Portfolio", 
+    body: `This website right here! Built using Vite + React along with ThreeJS and React 3 fiber `, 
+    website: "https://github.com/TSEidolon/EdgarCaballero-portfolio", 
+    github: "https://github.com/TSEidolon/EdgarCaballero-portfolio", 
+    image: EdgarPortfolio, 
     additionalClass: " bg-blue-500",
+    githubColor: " text-black ",
     chameleon: chameleonLineBlack, 
     id: "4"
   },
