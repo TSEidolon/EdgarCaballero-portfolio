@@ -1,11 +1,10 @@
 import {Canvas} from '@react-three/fiber';
 import { PerspectiveCamera} from '@react-three/drei';
-import { Suspense } from 'react';
+import { Suspense, forwardRef } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import CanvasLoader from '../features/canvasLoader';
 import {useMediaQuery} from 'react-responsive';
 import { calculateSizes } from '../features/modelMediaQuery';
-
 import DecryptedText from '../features/decryptedText';
 import { CartoonDiorama } from '../modelComponents/cartoonDiorama';
 import HeroCamera from '../features/heroCamera';
@@ -15,7 +14,7 @@ import leavesFalling from "../../assets/leavesFalling.png";
 
 
 
-const HeroSection = () => {
+export default forwardRef (function HeroSection (props,ref) {
   const isSmall = useMediaQuery({ maxWidth: 650 });
   const isMedium = useMediaQuery({ maxWidth: 768 });
   const isLarge = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
@@ -23,7 +22,7 @@ const HeroSection = () => {
   
 
   return (
-    <section  className='bg-hero-background bg-fixed
+    <section {...props} ref={ref} className='bg-hero-background bg-fixed
     z-0 bg-cover bg-center bg-no-repeat min-h-screen bg-[color:var(--primary-color)] relative'>
       <section className='top-hero z-10 bg-hero-background-test
        bg-cover bg-bottom bg-no-repeat 
@@ -75,6 +74,6 @@ const HeroSection = () => {
     </section>
 
   )
-}
+})
 
-export default HeroSection
+ 

@@ -8,10 +8,10 @@ import { useRef } from "react";
 
 function App() {
   const heroRef = useRef(null);
-  const overviewRef = useRef("apptest");
+  const overviewRef = useRef(null);
   const projectsRef = useRef(null);
   const footerRef = useRef(null);
-  console.log(overviewRef)
+
   return (
     <div className="overflow-x-hidden">
       <ParallaxProvider>

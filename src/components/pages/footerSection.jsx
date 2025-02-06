@@ -1,4 +1,4 @@
-import {useState, useEffect, Suspense, useRef} from 'react';
+import {useState, useEffect, Suspense, useRef, forwardRef} from 'react';
 import {Canvas} from '@react-three/fiber';
 import { PerspectiveCamera, OrbitControls} from '@react-three/drei';
 import CanvasLoader from '../features/canvasLoader';
@@ -7,15 +7,14 @@ import { IoLogoGithub } from "react-icons/io";
 import { CiLinkedin } from "react-icons/ci";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { Parallax } from 'react-scroll-parallax';
-
-
 import GrassBackground from "../../assets/grassBackground.png"
 
-const FooterSection = () => {
+
+export default forwardRef (function FooterSection (props,ref) {
   const [animationName, setAnimationName] = useState('idle')
 
   return (
-    <div  className='bg-hero-background bg-fixed 
+    <div {...props} ref={ref} className='bg-hero-background bg-fixed 
     z-0 bg-cover bg-center bg-no-repeat h-full xl:h-screen  relative flex flex-col justify-center items-center bg-[color:var(--primary-color)]'>
       <section className='relative flex xl:flex-row flex-col justify-center items-center h-full w-full'>
         <section className='Left-area-section px-10 pt-10 pb-0 lg:pb-10 w-full lg:w-[50%] h-full '>
@@ -85,6 +84,5 @@ const FooterSection = () => {
       </section>
     </div>
   )
-}
+})
 
-export default FooterSection

@@ -1,6 +1,6 @@
 import {Canvas} from '@react-three/fiber';
 import { PerspectiveCamera} from '@react-three/drei';
-import { Suspense } from 'react';
+import { Suspense, forwardRef } from 'react';
 import { Parallax } from 'react-scroll-parallax';
 import CanvasLoader from '../features/canvasLoader';
 import { BirdsOverview } from '../modelComponents/birdsOverview';
@@ -9,7 +9,7 @@ import HeroCamera from '../features/heroCamera';
 import TrueFocus from '../features/trueFocus';
 import {useMediaQuery} from 'react-responsive';
 import { calculateSizes } from '../features/modelMediaQuery';
-import { forwardRef } from 'react';
+
 
 export default forwardRef (function OverviewSection (props,ref) {
   const isSmall = useMediaQuery({ maxWidth: 650 });
