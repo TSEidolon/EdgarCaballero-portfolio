@@ -15,7 +15,7 @@ const FooterSection = () => {
   const [animationName, setAnimationName] = useState('idle')
 
   return (
-    <div className='bg-hero-background bg-fixed 
+    <div  className='bg-hero-background bg-fixed 
     z-0 bg-cover bg-center bg-no-repeat h-full xl:h-screen  relative flex flex-col justify-center items-center bg-[color:var(--primary-color)]'>
       <section className='relative flex xl:flex-row flex-col justify-center items-center h-full w-full'>
         <section className='Left-area-section px-10 pt-10 pb-0 lg:pb-10 w-full lg:w-[50%] h-full '>

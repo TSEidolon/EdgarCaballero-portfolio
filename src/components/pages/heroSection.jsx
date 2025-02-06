@@ -23,7 +23,7 @@ const HeroSection = () => {
   
 
   return (
-    <section className='bg-hero-background bg-fixed
+    <section  className='bg-hero-background bg-fixed
     z-0 bg-cover bg-center bg-no-repeat min-h-screen bg-[color:var(--primary-color)] relative'>
       <section className='top-hero z-10 bg-hero-background-test
        bg-cover bg-bottom bg-no-repeat 

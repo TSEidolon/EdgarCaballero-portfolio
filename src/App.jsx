@@ -1,30 +1,39 @@
-import NavBar from "./components/pages/navBar.jsx"
+import {NavBar} from "./components/pages/navBar.jsx"
 import HeroSection from "./components/pages/heroSection.jsx"
 import OverviewSection from "./components/pages/overviewSection.jsx"
 import { ParallaxProvider } from 'react-scroll-parallax';
 import ProjectsSection from "./components/pages/projectsSection.jsx";
 import FooterSection from "./components/pages/footerSection.jsx";
-
+import { useRef } from "react";
 
 function App() {
-  
-
+  const heroRef = useRef(null);
+  const overviewRef = useRef("apptest");
+  const projectsRef = useRef(null);
+  const footerRef = useRef(null);
+  console.log(overviewRef)
   return (
     <div className="overflow-x-hidden">
       <ParallaxProvider>
 
-        <NavBar/>
+        <NavBar
+          navScrollOne = {heroRef}
+          navScrollTwo = {overviewRef}
+          navScrollThree = {projectsRef}
+          navScrollFour = {footerRef}
 
-        <HeroSection />
+        />
+
+        <HeroSection ref={heroRef} />
         <section class="triangle"></section>
 
 
-        <OverviewSection/>
+        <OverviewSection ref={overviewRef} />
         
-        <ProjectsSection />
+        <ProjectsSection ref={projectsRef} />
 
 
-        <FooterSection />
+        <FooterSection ref={footerRef}/>
         
       </ParallaxProvider>
        

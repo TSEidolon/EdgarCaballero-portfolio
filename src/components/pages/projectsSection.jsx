@@ -1,10 +1,8 @@
 
 import leavesProjects from '../../assets/leavesProjects.png'
-
-import { GrGithub } from "react-icons/gr";
-import { useState } from 'react'
 import { Parallax } from 'react-scroll-parallax'
 import ProjectCards from '../information/projectCards'
+
 
 
 
@@ -12,7 +10,7 @@ const ProjectsSection = () => {
 
 
   return (
-    <div className=' z-0 h-full lg:h-full xl:h-screen bg-[color:var(--primary-color)] relative bg-projects-background bg-fixed bg-contain bg-no-repeat bg-bottom flex justify-center items-center py-5'>
+    <div  className=' z-0 h-full lg:h-full xl:h-screen bg-[color:var(--primary-color)] relative bg-projects-background bg-fixed bg-contain bg-no-repeat bg-bottom flex justify-center items-center py-5'>
       <section className='cards-container  '>
 
         <ProjectCards />
