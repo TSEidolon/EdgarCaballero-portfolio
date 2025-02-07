@@ -45,7 +45,7 @@ const projectInfo = [
   {
     title: "My Portfolio", 
     body: `This website right here! Built using Vite + React along with ThreeJS and React 3 fiber `, 
-    website: "https://github.com/TSEidolon/EdgarCaballero-portfolio", 
+    website: "https://edgarcaballerocodes.netlify.app/", 
     github: "https://github.com/TSEidolon/EdgarCaballero-portfolio", 
     image: EdgarPortfolio, 
     additionalClass: " bg-blue-500",
