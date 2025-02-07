@@ -12,7 +12,7 @@ import { useInView } from "react-intersection-observer";
 const projectInfo = [
   {
     title: "Fenix Furniture", 
-    body: `A furniture website used to practice the "Shopping Cart" function in React with Tailwind`, 
+    body: `A furniture website that utilizes React's state management to efficiently track and update cart data. `, 
     website: "https://fenix-furniture-tseidolon.netlify.app/", 
     github: "https://github.com/TSEidolon/Fenix-Furniture-TSEidolon", 
     image: FenixFurniture, 
