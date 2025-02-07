@@ -25,12 +25,6 @@ The moment I saw 3D models integrated into websites, I knew my portfolio had to 
   - PNG Images - [PNGWing](https://www.pngwing.com/)
 
 
-<!-- 
-Ready to build and innovate
-Aspiring front-end developer with a passion for enhancing user experiences through UI/UX design and performance optimization. Eager to further develop my skills in both front-end technologies and overall web performance.
-
-Aspiring front-end developer with a background in science, bringing a detail-oriented mindset to UI/UX design and performance optimization. Eager to apply my analytical skills from the lab to web development, continuously expanding my expertise in both front-end technologies and enhancing overall user experiences.
- -->
 
 # React + Vite
 
