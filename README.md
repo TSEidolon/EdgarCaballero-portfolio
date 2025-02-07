@@ -1,4 +1,6 @@
-As soon as I saw 3d models being utilized in websites, I knew that I had to make my portfolio with these models being the heart of the design. Opted to use models with lower poly counts to increase load times and performance. 
+### Live Website: [Edgar Caballero (Temporary Domain)](https://edgarcaballerocodes.netlify.app/)
+
+The moment I saw 3D models integrated into websites, I knew my portfolio had to feature them at its core. I began exploring Three.js and later transitioned to React-three-fiber for a more seamless React integration. To optimize performance and load times, I focused on using low-poly models while maintaining a visually engaging experience. 
 
   ### JavaScript Library: 
       - React JS 
@@ -8,7 +10,6 @@ As soon as I saw 3d models being utilized in websites, I knew that I had to make
   ### CSS framework: 
       - Tailwind CSS
 
-### Live Website:[]()
 
 ### Mockup made in [Figma](https://www.figma.com/design/lkaa7ASK6EtTHIJQCmZPto/Portfolio?node-id=0-1&t=RMbCdVRTdb73HUjM-1)
 
