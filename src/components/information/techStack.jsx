@@ -58,7 +58,7 @@ const TechStack = () => {
                   <div className='w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] '>
                     {techies.icon}
                   </div>
-                  <p className='text-[.60rem] lg:text-base '>
+                  <p className='text-[.50rem] lg:text-base '>
                     {techies.stack}
                   </p>
                 </div>
