@@ -64,7 +64,7 @@ const ProjectCards = () => {
     <div ref={ref} className='grid  xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 gap-12 p-2'>
     {projectInfo.map(function(cardsInfo){
           return (
-      <div ref={ref} className={`cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[450px] h-[245px] sm:w-[550px] sm:h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md transition-all  ease-in-out odd:delay-150 even:delay-300 ${
+      <div ref={ref} className={`cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[380px] h-[210px] sm:w-[550px] sm:h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md transition-all  ease-in-out odd:delay-150 even:delay-300 ${
         inView
         ? "opacity-100 translate-x-0 "
         : "opacity-0 translate-x-[100%] "
@@ -74,11 +74,11 @@ const ProjectCards = () => {
         ? "opacity-100 translate-x-0 "
         : "opacity-0 translate-x-[-100%] "
         }`} >
-          <div className='border-2 border-black p-4 h-full flex flex-col items-center justify-between gap-2 bg-[color:var(--primary-color)] rounded-md'>
-              <h4 className='text-base sm:text-xl font-semibold '>{cardsInfo.title}</h4>
-              <p className='pb-1  text-xs sm:text-base'>{cardsInfo.body} </p>
+          <div className='border-2 border-black p-2 sm:p-4 h-full flex flex-col items-center justify-between gap-2 bg-[color:var(--primary-color)] rounded-md'>
+              <h4 className='text-sm sm:text-xl font-semibold '>{cardsInfo.title}</h4>
+              <p className='pb-1  text-[.60rem] sm:text-base'>{cardsInfo.body} </p>
               <button onClick={()=> window.open(cardsInfo.website)}
-              className='border-2 border-gray-800 px-6 sm:px-8 py-0 sm:py-1 rounded-xl  hover:bg-[color:var(--secondary-color)] hover:scale-105 duration-500 shadow-md shadow-[#88AB8E]'>
+              className='border-2 border-gray-800 px-4 sm:px-8 py-0 sm:py-1 rounded-xl  hover:bg-[color:var(--secondary-color)] hover:scale-105 duration-500 shadow-md shadow-[#88AB8E] text-sm sm:text-base '>
                 Visit
               </button>
           </div>
@@ -89,7 +89,7 @@ const ProjectCards = () => {
         : "opacity-0 translate-x-[-100%] "
         }`} >
           <img src={cardsInfo.image} alt="" className={`" border-2 border-black  rounded-md z-0 " + ${cardsInfo.additionalClass}`}  />
-          <img src={cardsInfo.chameleon} alt="" className='z-10 h-[70px] w-[70px] absolute bottom-[-4%] left-[2%]
+          <img src={cardsInfo.chameleon} alt="" className='z-10 h-[70px] w-[70px] absolute bottom-[-6%] sm:bottom-[-4%] left-[2%]
           ' />
 
           <a href={cardsInfo.github} target="_blank" className='z-10 absolute h-[40px] w-[40px] bottom-[2%] m-2 left-[16%] opacity-0 scale-0 transition-all ease-in-out duration-700  group-hover:left-[40%] group-hover:opacity-100  group-hover:scale-90 '>
