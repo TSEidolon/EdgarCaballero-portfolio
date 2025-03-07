@@ -56,7 +56,7 @@ const projectInfo = [
   },
   {
     title: "Pokedex", 
-    body: `A Pokemon search app that fetches and displays data using JS, Tailwind CSS, and PokeAPI's REST API `, 
+    body: `A Pokemon search app that fetches and displays data using JS, Tailwind, and PokeAPI's REST API `, 
     website: "https://pokedex-tseidolon.netlify.app/", 
     github: "https://github.com/TSEidolon/pokedex-api-v2", 
     image: Pokedex, 
