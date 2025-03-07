@@ -2,6 +2,7 @@ import PlaceholderCat from '../../assets/placeholderCat.png'
 import FenixFurniture from '../../assets/fenixFurnitureWebsite.png'
 import KolSlayer from '../../assets/kolSlayerWebsite.png'
 import ProtossGym from '../../assets/protossGymWebsite.png'
+import Pokedex from '../../assets/pokedex.png'
 
 import EdgarPortfolio from "../../assets/edgarPortfolio.png"
 import chameleonLineBlack from '../../assets/chameleonLineOne.svg'
@@ -53,6 +54,17 @@ const projectInfo = [
     chameleon: chameleonLineBlack, 
     id: "4"
   },
+  {
+    title: "Pokedex", 
+    body: `A Pokemon search app that fetches and displays data using JS, Tailwind CSS, and PokeAPI's REST API `, 
+    website: "https://pokedex-tseidolon.netlify.app/", 
+    github: "https://github.com/TSEidolon/pokedex-api-v2", 
+    image: Pokedex, 
+    additionalClass: "",
+    githubColor: " text-black ",
+    chameleon: chameleonLineBlack, 
+    id: "4"
+  },
 ]
 
 
@@ -61,7 +73,7 @@ const ProjectCards = () => {
     
   });
   return (
-    <div ref={ref} className='grid  xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 gap-12 p-2'>
+    <div ref={ref} className='grid h-full xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 gap-12 p-2'>
     {projectInfo.map(function(cardsInfo){
           return (
       <div ref={ref} className={`cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[380px] h-[210px] sm:w-[550px] sm:h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md transition-all  ease-in-out odd:delay-150 even:delay-300 ${

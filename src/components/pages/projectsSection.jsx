@@ -10,7 +10,7 @@ export default forwardRef (function ProjectsSection (props,ref)  {
 
 
   return (
-    <div {...props} ref={ref} className=' z-0 h-full lg:h-full xl:h-screen bg-[color:var(--primary-color)] relative bg-projects-background bg-fixed bg-contain bg-no-repeat bg-bottom flex justify-center items-center py-5'>
+    <div {...props} ref={ref} className=' z-0 h-full lg:h-full  bg-[color:var(--primary-color)] relative bg-projects-background bg-fixed bg-contain bg-no-repeat bg-bottom flex justify-center items-center py-5'>
       <section className='cards-container  '>
 
         <ProjectCards />
