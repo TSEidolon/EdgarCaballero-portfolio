@@ -34,7 +34,7 @@ export const techList = [
   stack: 'Git', icon: <FaGitAlt className='h-full w-full'/>, id: '7',
 },
 {
-  stack: 'React3Fiber', icon: <img src={r3fLogo} className="w-full h-full"/> , id: '8',
+  stack: 'R3F', icon: <img src={r3fLogo} className="w-full h-full "/> , id: '8',
 },
 
 ]
@@ -47,7 +47,7 @@ const TechStack = () => {
 
   return (
 
-  <div  className= "grid grid-cols-4 lg:grid-cols-3 gap-5"  >
+  <div  className= "grid grid-cols-4 lg:grid-cols-4 gap-5"  >
             {techList.map(function(techies){
               return (
                 <div ref={ref} key={techies.id} className={`flex items-center flex-col p-2 lg:p-1 shadow-md shadow-[#88AB8E] rounded-md even:delay-150 odd:delay-300 transition-all ${
@@ -58,7 +58,7 @@ const TechStack = () => {
                   <div className='w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] '>
                     {techies.icon}
                   </div>
-                  <p className='text-[.50rem] lg:text-base '>
+                  <p className='text-[.50rem] lg:text-sm '>
                     {techies.stack}
                   </p>
                 </div>
