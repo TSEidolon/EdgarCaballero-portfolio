@@ -63,20 +63,20 @@ const projectInfo = [
     additionalClass: "",
     githubColor: " text-black ",
     chameleon: chameleonLineBlack, 
-    id: "4"
+    id: "5"
   },
 ]
 
 
 const ProjectCards = () => {
   const {ref, inView } = useInView({
-    
+    triggerOnce: true
   });
   return (
     <div ref={ref} className='grid h-full xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 gap-12 p-2'>
     {projectInfo.map(function(cardsInfo){
           return (
-      <div ref={ref} className={`cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[380px] h-[210px] sm:w-[550px] sm:h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md transition-all  ease-in-out odd:delay-150 even:delay-300 ${
+      <div key={cardsInfo.id} ref={ref} className={`cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)] w-[380px] h-[210px] sm:w-[550px] sm:h-[300px] shadow-md border-2 border-black flex gap-4 rounded-md transition-all  ease-in-out odd:delay-150 even:delay-300 ${
         inView
         ? "opacity-100 translate-x-0 "
         : "opacity-0 translate-x-[100%] "

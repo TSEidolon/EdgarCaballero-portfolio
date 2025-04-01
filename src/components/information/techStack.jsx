@@ -38,7 +38,7 @@ export const techList = [
   stack: 'R3F', icon: <img src={r3fLogo} className="w-full h-full "/> , id: '8',
 },
 {
-  stack: 'Postgresql', icon: <BiLogoPostgresql className='h-full w-full'/> , id: '9',
+  stack: 'PostgreSQL', icon: <BiLogoPostgresql className='h-full w-full'/> , id: '9',
 },
 
 ]
