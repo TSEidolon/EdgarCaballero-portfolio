@@ -35,7 +35,7 @@ export default forwardRef (function OverviewSection (props,ref) {
 
 
         </div>
-        <div className='tech-stack-list h-[50%]  pt-5 sm:pt-0 lg:w-[450px] px-10 relative'>
+        <div className='tech-stack-list h-[50%]  pt-5 pb-10 sm:pt-0 lg:w-[450px] px-10 relative'>
           <p className='text-2xl pb-5 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]'>Tech Stack: </p>
           <TechStack/>
         </div>
