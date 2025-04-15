@@ -1,10 +1,15 @@
 
 import leavesProjects from '../../assets/leavesProjects.png'
+import SuspenseLoader from '../features/suspenseLoader'
 import { Parallax } from 'react-scroll-parallax'
-import ProjectCards from '../information/projectCards'
-import { forwardRef } from 'react'
+import { forwardRef, Suspense, lazy } from 'react'
 
-
+function delayTheHounds(promise) {
+  return new Promise(resolve => {
+    setTimeout(resolve, 1000);
+  }).then(() => promise);
+}
+const ProjectCardsLazy = lazy (() => delayTheHounds(import ("../information/projectCards")))
 
 export default forwardRef (function ProjectsSection (props,ref)  {
 
@@ -12,8 +17,9 @@ export default forwardRef (function ProjectsSection (props,ref)  {
   return (
     <div {...props} ref={ref} className=' z-0 h-full lg:h-full  bg-[color:var(--primary-color)] relative bg-projects-background bg-fixed bg-contain bg-no-repeat bg-bottom flex justify-center items-center py-5'>
       <section className='cards-container  '>
-
-        <ProjectCards />
+        <Suspense fallback={<SuspenseLoader/>}>
+          <ProjectCardsLazy />
+        </Suspense>
  
       </section>
       <section>

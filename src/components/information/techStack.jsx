@@ -62,7 +62,7 @@ const TechStack = () => {
                   <div className='w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] '>
                     {techies.icon}
                   </div>
-                  <p className='text-[.50rem] lg:text-sm '>
+                  <p className='text-[.50rem] lg:text-[.60rem] '>
                     {techies.stack}
                   </p>
                 </div>
