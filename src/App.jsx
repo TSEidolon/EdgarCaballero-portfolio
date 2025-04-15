@@ -5,6 +5,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import ProjectsSection from "./components/pages/projectsSection.jsx";
 import FooterSection from "./components/pages/footerSection.jsx";
 import { useRef } from "react";
+import { Suspense } from "react";
 
 function App() {
   const heroRef = useRef(null);
