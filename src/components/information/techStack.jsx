@@ -1,7 +1,7 @@
 import { FaReact, FaCss3Alt, FaHtml5 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { TbBrandThreejs } from "react-icons/tb";
+import { TbBrandThreejs, TbSql } from "react-icons/tb";
 import { FaFigma } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
@@ -38,7 +38,10 @@ export const techList = [
   stack: 'R3F', icon: <img src={r3fLogo} className="w-full h-full "/> , id: '8',
 },
 {
-  stack: 'PostgreSQL', icon: <BiLogoPostgresql className='h-full w-full'/> , id: '9',
+  stack: 'SQL', icon: <TbSql className='h-full w-full'/> , id: '9',
+},
+{
+  stack: 'PostgreSQL', icon: <BiLogoPostgresql className='h-full w-full'/> , id: '10',
 },
 
 ]
