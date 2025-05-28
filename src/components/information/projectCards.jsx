@@ -3,6 +3,7 @@ import FenixFurniture from '../../assets/fenixFurnitureWebsite.png'
 import KolSlayer from '../../assets/kolSlayerWebsite.png'
 import ProtossGym from '../../assets/protossGymWebsite.png'
 import Pokedex from '../../assets/pokedex.png'
+import trooperDatabase from '../../assets/trooperDatabase.png'
 
 import EdgarPortfolio from "../../assets/edgarPortfolio.png"
 import chameleonLineBlack from '../../assets/chameleonLineOne.svg'
@@ -60,6 +61,17 @@ const projectInfo = [
     website: "https://pokedex-tseidolon.netlify.app/", 
     github: "https://github.com/TSEidolon/pokedex-api-v2", 
     image: Pokedex, 
+    additionalClass: "",
+    githubColor: " text-black ",
+    chameleon: chameleonLineBlack, 
+    id: "5"
+  },
+    {
+    title: "Trooper Login", 
+    body: `A play-on fullstack login website with Express, PostgreSQL, React, and Tailwind`, 
+    website: "https://trooperdatabase-tseidolon.netlify.app/", 
+    github: "https://github.com/TSEidolon/loginSystemV1", 
+    image: trooperDatabase, 
     additionalClass: "",
     githubColor: " text-black ",
     chameleon: chameleonLineBlack, 
