@@ -68,7 +68,7 @@ const projectInfo = [
   },
     {
     title: "Trooper Login", 
-    body: `A play-on fullstack login website with Express, PostgreSQL, React, and Tailwind`, 
+    body: `A fun fullstack login website with Express, PostgreSQL, React, and Tailwind`, 
     website: "https://trooperdatabase-tseidolon.netlify.app/", 
     github: "https://github.com/TSEidolon/loginSystemV1", 
     image: trooperDatabase, 
