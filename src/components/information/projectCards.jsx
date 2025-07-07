@@ -4,6 +4,7 @@ import KolSlayer from '../../assets/kolSlayerWebsite.png'
 import ProtossGym from '../../assets/protossGymWebsite.png'
 import Pokedex from '../../assets/pokedex.png'
 import trooperDatabase from '../../assets/trooperDatabase.png'
+import weatherApp from '../../assets/weatherApp.png'
 
 import EdgarPortfolio from "../../assets/edgarPortfolio.png"
 import chameleonLineBlack from '../../assets/chameleonLineOne.svg'
@@ -75,7 +76,18 @@ const projectInfo = [
     additionalClass: "",
     githubColor: " text-black ",
     chameleon: chameleonLineBlack, 
-    id: "5"
+    id: "6"
+  },
+  {
+    title: "Weather App", 
+    body: `To know thyself, you must know the weather. Built with Typescript, React, and Tailwind`, 
+    website: "https://weather-app-tseidolon.netlify.app/", 
+    github: "https://github.com/TSEidolon/weather-app-v1", 
+    image: weatherApp , 
+    additionalClass: "",
+    githubColor: " text-white ",
+    chameleon: chameleonLineWhite, 
+    id: "7"
   },
 ]
 
