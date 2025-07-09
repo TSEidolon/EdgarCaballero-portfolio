@@ -5,7 +5,7 @@ import { TbBrandThreejs, TbSql } from "react-icons/tb";
 import { FaFigma } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
-import r3fLogo from "../../assets/r3fLogo.png"
+import { BiLogoTypescript } from "react-icons/bi";
 import { BiLogoPostgresql } from "react-icons/bi";
 
 
@@ -35,7 +35,7 @@ export const techList = [
   stack: 'Git', icon: <FaGitAlt className='h-full w-full'/>, id: '7',
 },
 {
-  stack: 'R3F', icon: <img src={r3fLogo} className="w-full h-full "/> , id: '8',
+  stack: 'TypeScript', icon: <BiLogoTypescript className="w-full h-full "/> , id: '8',
 },
 {
   stack: 'SQL', icon: <TbSql className='h-full w-full'/> , id: '9',
