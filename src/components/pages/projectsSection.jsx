@@ -4,12 +4,8 @@ import SuspenseLoader from '../features/suspenseLoader'
 import { Parallax } from 'react-scroll-parallax'
 import { forwardRef, Suspense, lazy } from 'react'
 
-function delayTheHounds(promise) {
-  return new Promise(resolve => {
-    setTimeout(resolve, 1000);
-  }).then(() => promise);
-}
-const ProjectCardsLazy = lazy (() => delayTheHounds(import ("../information/projectCards")))
+
+const ProjectCardsLazy = lazy(() => import("../information/projectCards"))
 
 export default forwardRef (function ProjectsSection (props,ref)  {
 
