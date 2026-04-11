@@ -72,7 +72,7 @@ const projectInfo = [
     website: "https://trooperdatabase-tseidolon.netlify.app/",
     github: "https://github.com/TSEidolon/loginSystemV1",
     image: trooperDatabase,
-    additionalClass: "",
+    additionalClass: " object-cover ",
     githubColor: "text-black",
     chameleon: chameleonLineBlack,
     id: "6"
@@ -93,7 +93,7 @@ const projectInfo = [
 function ProjectCard({ cardsInfo, index }) {
   return (
     <div
-      className="cards-base group bg-comic-background bg-cover bg-[color:var(--tertiary-color)]
+      className="cards-base group bg-black/20 backdrop-blur-lg bg-cover 
       w-[380px] h-[210px] sm:w-[550px] sm:h-[300px]
       shadow-md border-2 border-black flex gap-4 rounded-md
       opacity-0 animate-fadeIn"
@@ -108,7 +108,7 @@ function ProjectCard({ cardsInfo, index }) {
           <p className="pb-1 text-[.60rem] sm:text-base">{cardsInfo.body}</p>
           <button
             onClick={() => window.open(cardsInfo.website)}
-            className="border-2 border-gray-800 px-4 sm:px-8 py-1 rounded-xl hover:bg-[color:var(--secondary-color)] hover:scale-105 duration-300"
+            className="border-2 text-[.80rem] sm:text-base border-gray-800 px-4 sm:px-8 py-1 rounded-xl hover:bg-[color:var(--secondary-color)] hover:scale-105 duration-300"
           >
             Visit
           </button>
@@ -120,8 +120,8 @@ function ProjectCard({ cardsInfo, index }) {
           src={cardsInfo.image}
           loading="lazy"
           decoding="async"
-          alt=""
-          className={`border-2 border-black rounded-md z-0 ${cardsInfo.additionalClass}`}
+          alt={cardsInfo.title}
+          className={`" border-2 border-black  rounded-md z-0 " + ${cardsInfo.additionalClass}`}
         />
 
         <img

@@ -9,6 +9,7 @@ import FooterSection from "./components/pages/footerSection.jsx";
 
 
 
+
 function App() {
   const heroRef = useRef(null);
   const overviewRef = useRef(null);
@@ -34,6 +35,7 @@ function App() {
           <FooterSection ref={footerRef}/>
           
         </ParallaxProvider>
+
 
     </div>
   )
