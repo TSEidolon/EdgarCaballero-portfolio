@@ -61,8 +61,8 @@ const projectInfo = [
     website: "https://pokedex-tseidolon.netlify.app/",
     github: "https://github.com/TSEidolon/pokedex-api-v2",
     image: Pokedex,
-    additionalClass: "",
-    githubColor: "text-black",
+    additionalClass: " object-cover w-full ",
+    githubColor: "text-black  ",
     chameleon: chameleonLineBlack,
     id: "5"
   },
@@ -72,7 +72,7 @@ const projectInfo = [
     website: "https://trooperdatabase-tseidolon.netlify.app/",
     github: "https://github.com/TSEidolon/loginSystemV1",
     image: trooperDatabase,
-    additionalClass: " object-cover ",
+    additionalClass: " object-cover w-full ",
     githubColor: "text-black",
     chameleon: chameleonLineBlack,
     id: "6"
@@ -83,8 +83,8 @@ const projectInfo = [
     website: "https://weather-app-tseidolon.netlify.app/",
     github: "https://github.com/TSEidolon/weather-app-v1",
     image: weatherApp,
-    additionalClass: "",
-    githubColor: "text-white",
+    additionalClass: " object-cover w-full ",
+    githubColor: "text-white  ",
     chameleon: chameleonLineWhite,
     id: "7"
   },
@@ -93,7 +93,7 @@ const projectInfo = [
 function ProjectCard({ cardsInfo, index }) {
   return (
     <div
-      className="cards-base group bg-black/20 backdrop-blur-lg bg-cover 
+      className="cards-base group bg-[#AFC8AD]/10 backdrop-blur-lg bg-cover 
       w-[380px] h-[210px] sm:w-[550px] sm:h-[300px]
       shadow-md border-2 border-black flex gap-4 rounded-md
       opacity-0 animate-fadeIn"
