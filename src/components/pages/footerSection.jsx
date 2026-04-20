@@ -39,12 +39,12 @@ export default forwardRef (function FooterSection (props,ref) {
                onPointerOver={() => setAnimationName("bounce")}
                onPointerOut={() => setAnimationName('idle')}
             >
-              <button onClick={()=> window.open("https://www.linkedin.com/in/edgar-francis-caballero-477556238/")} className='w-[40px] h-[56px] sm:w-[50px] sm:h-[70px] border-2 border-black rounded-md p-1 absolute left-[-6%] sm:left-[-5%] bg-[color:var(--secondary-color)] hover:bg-[color:var(--tertiary-color)]'>
+              <button onClick={()=> window.open("https://www.linkedin.com/in/edgar-francis-caballero/")} className='w-[40px] h-[56px] sm:w-[50px] sm:h-[70px] border-2 border-black rounded-md p-1 absolute left-[-6%] sm:left-[-5%] bg-[color:var(--secondary-color)] hover:bg-[color:var(--tertiary-color)]'>
               <CiLinkedin className='w-full h-full ' />
               </button>
               <div className='flex'>
                 <p className=''>LinkedIn:</p> 
-                <a href="https://www.linkedin.com/in/edgar-francis-caballero-477556238/" target='_blank' className='pl-2 font-semibold'>Edgar Francis Caballero</a>
+                <a href="https://www.linkedin.com/in/edgar-francis-caballero/" target='_blank' className='pl-2 font-semibold'>Edgar Francis Caballero</a>
               </div>
             </div>
             <div className='link-rows text-sm sm:text-xl lg:text-2xl flex items-center justify-center relative p-5 px-10 w-full    '
